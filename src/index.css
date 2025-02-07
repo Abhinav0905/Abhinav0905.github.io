@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply text-gray-900 antialiased;
+  @apply antialiased;
 }
 
 /* Custom scrollbar */
