@@ -17,11 +17,11 @@ export function Hero() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Kumar Abhinav
             </h1>
-            <h2 className="text-xl md:text-2xl text-gray-600 mb-6">
-              Software Engineer | Data Engineer | AI & ML Enthusiast
+            <h2 className="text-lg md:text-xl text-gray-600 mb-6">
+                Business-Focused Problem Solver | Bridging Software and Data Engineering with Business Analytics
             </h2>
-            <p className="text-gray-600 mb-8 max-w-2xl">
-              Passionate software engineer with expertise in data engineering, API development, and machine learning. Experienced in building scalable solutions and deriving insights from data to drive business value.
+            <p className="text-gray-600 mb-8 max-w-2xl mx-auto md:mx-0 text-justify">
+              With over 15+ years of experience, I develop data-driven solutions that streamline operations and deliver measurable business impact. With a Master’s in Business Analytics and hands-on experience in software engineering, data engineering, and supply chain analytics, I turn complex data into actionable insights. Explore my projects below or download a resume to learn more.
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start mb-8">
               <a

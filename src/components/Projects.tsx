@@ -9,7 +9,7 @@ import sqlConverterImg from '../assets/images/projects/Natural Language to SQL.p
 import supplierScoreImg from '../assets/images/projects/Predecitive Supplier Score Card.png';
 import ticketPredictorImg from '../assets/images/projects/Ticket Predictor.png';
 
-type ProjectStatus = 'completed' | 'in-progress' | 'planing' | 'poc';
+type ProjectStatus = 'completed' | 'in-progress' | 'planning' | 'poc';
 type ProjectCategory = 'data-analytics' | 'ml-ai' | 'process-automation' | 'api' | 'other';
 
 interface Project {
@@ -21,18 +21,24 @@ interface Project {
   demo?: string;
   status: ProjectStatus;
   category: ProjectCategory;
+  highlights?: string[];
 }
 
 const projects: Project[] = [
   {
     title: 'JIRA Ticket Analysis Dashboard with NLP',
-    description: 'Developed an advanced Python-based analytics dashboard using Streamlit that leverages OpenAI’s GPT-3.5 for AI-powered ticket categorization, interactive Plotly visualizations, and real-time JIRA REST API integration. Engineered robust features including efficient caching, enterprise-grade security with rate limiting, and a natural language query interface to deliver dynamic insights into ticket trends and category distribution.',
+    description: 'Developed an advanced Python-based analytics dashboard using Streamlit that leverages OpenAI’s GPT for AI-powered ticket categorization, interactive Plotly visualizations, and real-time JIRA REST API integration. Engineered robust features including efficient caching, enterprise-grade security with rate limiting, and a natural language query interface to deliver dynamic insights into ticket trends and category distribution.',
     image: jiraAIImg,
     technologies: ['Python', 'NLP', 'Machine Learning', 'Jira API', 'scikit-learn'],
     status: 'completed',
     category: 'ml-ai',
     github: 'https://github.com/Abhinav0905/JIraAI/tree/master',
-    demo: 'https://youtu.be/Q0Y3vWwFT_E'
+    demo: 'https://youtu.be/Q0Y3vWwFT_E',
+    highlights: [
+      'Reduced ticket triage time by ~25%',
+      'Implemented secure rate-limiting for enterprise use',
+      'Increased visibility into ticket trends and category distribution'
+    ]
   },
   {
     title: 'Automated Release Notes Generator',
@@ -41,6 +47,11 @@ const projects: Project[] = [
     technologies: ['Python', 'Git API', 'Jira API', 'Markdown'],
     status: 'completed',
     category: 'process-automation',
+    highlights: [
+      'Standardized release documentation process',
+      'Cut manual release-note writing time by 50%',
+      'Ensured consistent release communication across teams'
+    ],
     github: 'https://github.com/Abhinav0905/AI-Release-Note-Generator'
   },
   {
@@ -59,7 +70,11 @@ const projects: Project[] = [
     technologies: ['Python', 'NLP', 'SQL', 'Transformers', 'FastAPI'],
     status: 'completed',
     category: 'ml-ai',
-    github: 'https://github.com/yourusername/english-to-sql'
+    github: 'https://github.com/yourusername/english-to-sql',
+    highlights: [
+      'Democratized data access for non-technical stakeholders',
+      'Supports complex queries & multiple DB schemas'
+    ]
   },
   {
     title: 'Predictive Supplier Score Card',
@@ -68,7 +83,11 @@ const projects: Project[] = [
     technologies: ['Python', 'Machine Learning', 'Data Analytics', 'Dashboard'],
     status: 'in-progress',
     category: 'ml-ai',
-    github: ''
+    github: '',
+    highlights: [
+      'Aims to reduce supply chain risks',
+      'Early detection of underperforming suppliers'
+    ]
   },
   {
     title: 'JobGenie - LinkedIn Job Finder with AI',
@@ -76,15 +95,25 @@ const projects: Project[] = [
     image: jobGenieImg,
     technologies: ['Python', 'AI', 'LinkedIn API', 'Machine Learning'],
     status: 'in-progress',
-    category: 'ml-ai'
+    category: 'ml-ai',
+    github: '',
+    highlights: [
+      'Targets higher applicant-job matching accuracy',
+      'Potential to streamline job hunting process'
+    ]
   },
   {
     title: 'Python Book: Beginner to Intermediate',
-    description: 'Planning to write a comprehensive Python programming book covering fundamental to intermediate concepts with practical examples and real-world applications.',
+    description: 'In Planning stage, A comprehensive Python programming book covering fundamental to intermediate concepts with practical examples and real-world applications.',
     image: pythonBookImg,
     technologies: ['Python', 'Technical Writing', 'Education'],
-    status: 'planing',
-    category: 'other'
+    status: 'planning',
+    category: 'other',
+    github: '',
+    highlights: [
+      'Aims to guide new developers through hands-on examples',
+      'Will include real-world case studies'
+    ]
   },
   {
     title: 'JIRA Ticket Escalation Predictor',
@@ -93,14 +122,18 @@ const projects: Project[] = [
     technologies: ['Python', 'Deep Learning', 'Jira API', 'Data Analysis'],
     status: 'poc',
     category: 'ml-ai',
-    github: 'https://github.com/Abhinav0905/Jira_Tickets_Sentiment_Analysis'
+    github: 'https://github.com/Abhinav0905/Jira_Tickets_Sentiment_Analysis',
+    highlights: [
+      'Helps support teams proactively manage high-risk tickets',
+      'Utilizes sentiment analysis to gauge escalation likelihood'
+    ]
   }
 ];
 
 const statusColors = {
   'completed': 'bg-green-100 text-green-800',
   'in-progress': 'bg-yellow-100 text-yellow-800',
-  'planing': 'bg-blue-100 text-blue-800',
+  'planning': 'bg-blue-100 text-blue-800',
   'poc': 'bg-purple-100 text-purple-800'
 };
 
@@ -141,7 +174,7 @@ export function Projects() {
               >
                 All Status
               </button>
-              {(['completed', 'in-progress', 'planing', 'poc'] as const).map(status => (
+              {(['completed', 'in-progress', 'planning', 'poc'] as const).map(status => (
                 <button
                   key={status}
                   onClick={() => setSelectedStatus(status)}
