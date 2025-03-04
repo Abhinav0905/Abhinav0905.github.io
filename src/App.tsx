@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
+import { VisitorCounter } from './components/VisitorCounter';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>© {new Date().getFullYear()} Kumar Abhinav. All rights reserved.</p>
+          <div className="mt-2">
+            <VisitorCounter />
+          </div>
         </div>
       </footer>
     </div>
