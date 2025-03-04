@@ -5,7 +5,7 @@ const experiences = [
     title: 'Senior Software Engineer (Contractor)',
     company: 'LinkedIn',
     location: 'Mountain View, CA',
-    period: 'October 2024 - Present',
+    period: 'Oct 2024 - Present',
     description: [
       'Designed and integrated FastAPI to streamline connections with ServiceNow, reducing process execution times by 30%',
       'Built new FastAPI endpoints to centralize on-call team information and handle diverse user queries for Interanl Chatbot',
@@ -16,7 +16,7 @@ const experiences = [
     title: 'Tech Lead – Business Analyst & Data / Software Engineer',
     company: 'RFXCEL (Part of Antares Vision)',
     location: 'San Ramon, CA',
-    period: 'May 2023 - December 2024',
+    period: 'May 2023 - Dec 2024',
     description: [
       'Led development of data-driven systems using Elasticsearch and NoSQL, reducing data retrieval latency by 50%',
       'Designed custom ETL pipeline in Java, transforming data from SQL to NoSQL',
@@ -29,7 +29,7 @@ const experiences = [
     title: 'Manager - Data Analyst – Supply Chain Operations',
     company: 'VVF India Limited',
     location: 'Mumbai, India',
-    period: 'December 2017 - August 2022',
+    period: 'Dec 2017 - Aug 2022',
     description: [
       'Led SAP implementation project for GST compliance',
       'Conducted inventory analysis using SQL and Python, reducing inventory by 25%',
