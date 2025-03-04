@@ -5,10 +5,8 @@ export function VisitorCounter() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Using CountAPI - a free and simple counting API
     const fetchVisitorCount = async () => {
       try {
-        // Replace 'abhinav-portfolio' with your preferred namespace
         const response = await fetch('https://api.countapi.xyz/hit/abhinav-portfolio/visits');
         const data = await response.json();
         setVisitorCount(data.value);
