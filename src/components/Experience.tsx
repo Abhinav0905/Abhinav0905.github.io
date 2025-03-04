@@ -26,7 +26,7 @@ const experiences = [
     ]
   },
   {
-    title: 'Data Analyst – Supply Chain Operations',
+    title: 'Manager - Data Analyst – Supply Chain Operations',
     company: 'VVF India Limited',
     location: 'Mumbai, India',
     period: 'December 2017 - August 2022',
