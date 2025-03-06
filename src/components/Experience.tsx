@@ -26,6 +26,18 @@ const experiences = [
     ]
   },
   {
+    title: 'Business Analyst (Part Time)',
+    company: 'North California Small Business Development Centre',
+    location: 'Hayward, CA',
+    period: 'Oct 2022 - May 2023',
+    description: [
+      'Provided market research, competitor analysis, and consumer insights to local business owners',
+      'Developed social media marketing strategies to increase client visibility and engagement',
+      'Created a WordPress website for FETA project supporting local food vendors',
+      'Managed IT resources for the FETA campaign initiatives at the university'
+    ]
+  },
+  {
     title: 'Manager - Data Analyst – Supply Chain Operations',
     company: 'VVF India Limited',
     location: 'Mumbai, India',
@@ -35,6 +47,50 @@ const experiences = [
       'Conducted inventory analysis using SQL and Python, reducing inventory by 25%',
       'Built predictive models for cost and production analytics, reducing losses by 22%',
       'Created demand forecasting models improving accuracy by 20%'
+    ]
+  },
+  {
+    title: 'Deputy Manager - Business Analyst',
+    company: 'IPCL',
+    location: 'Kolkata, India',
+    period: 'Mar 2016 - Nov 2017',
+    description: [
+      'Engineered cost-effective business cases for coal procurement, delivering substantial savings',
+      'Negotiated long-term Power Purchase Agreements (PPA) with government entities, boosting revenue',
+      'Implemented SAP System\'s PM & MM Module, enhancing organizational efficiency by 25%'
+    ]
+  },
+  {
+    title: 'Deputy Manager - Project Management',
+    company: 'Bajaj Energy',
+    location: 'Noida, India',
+    period: 'Feb 2013 - Mar 2017',
+    description: [
+      'Led large-capex project from conception to completion, ensuring timely delivery of project objectives',
+      'Secured Mega Power Project Status with Central Electricity Authority (CEA), achieving $32 million in cost savings',
+      'Managed cross-functional teams to ensure project milestones were met on schedule'
+    ]
+  },
+  {
+    title: 'Assistant Project Manager',
+    company: 'Abhijeet Projects',
+    location: 'Ranchi, India',
+    period: 'Sep 2010 - Jan 2013',
+    description: [
+      'Orchestrated comprehensive oversight in contract management, and capex project planning',
+      'Secured excise duty waiver for Mega Power Project Status with Government of India\'s CEA, saving $15 million',
+      'Managed cross-functional teams to ensure project milestones were met on schedule'
+    ]
+  },
+  {
+    title: 'Assistant Project Manager',
+    company: 'Airox Nigen',
+    location: 'Gurgram, India',
+    period: 'Apr 2009 - Sep 2010',
+    description: [
+      'Spearheaded design and launch of organization\'s website, enhancing online presence',
+      'Achieved 80% bid success rate through strategic business development and contract management',
+      'Implemented effective dashboarding techniques for improved project tracking and reporting'
     ]
   }
 ];
@@ -53,7 +109,7 @@ const education = [
     period: '2005 - 2009'
   },
   {
-    degree: 'B.E in Computer Science & Engineering (Minor)',
+    degree: 'Computer Science & Engineering (Completed 5/8 semesters)',
     school: 'Sathyabama Deemed University',
     location: 'Chennai, India',
     period: '2006 - 2009'
