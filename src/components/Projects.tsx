@@ -42,9 +42,9 @@ const projects: Project[] = [
   },
   {
     title: 'Automated Release Notes Generator',
-    description: 'Created a tool that automatically generates comprehensive release notes by analyzing git commits, pull requests, and Jira tickets. Streamlines the release documentation process and ensures consistency in release communications.',
+    description: 'Created a tool to automatically generate comprehensive release notes by analyzing remediation plans and Jira comments for each release, presenting them in a customer-friendly format. This solution streamlines the release documentation process and ensures consistency in release communications. Saving the team 50% of the time spent on manual release note writing.',
     image: releaseNoteImg,
-    technologies: ['Python', 'Git API', 'Jira API', 'Markdown'],
+    technologies: ['Python', 'Jira API', 'NLP'],
     status: 'completed',
     category: 'process-automation',
     highlights: [
