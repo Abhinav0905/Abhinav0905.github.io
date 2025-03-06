@@ -32,7 +32,7 @@ const experiences = [
     period: 'Oct 2022 - May 2023',
     description: [
       'Provided market research, competitor analysis, and consumer insights to local business owners',
-      'Developed social media marketing strategies to increase client visibility and engagement',
+      'Handled 8 clients individually to launch their online stores on the SBDC platform, working with them on pricing, inventory management, shipping & Google Analytics, achieving 75% success rate',
       'Created a WordPress website for FETA project supporting local food vendors',
       'Managed IT resources for the FETA campaign initiatives at the university'
     ]
