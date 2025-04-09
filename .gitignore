@@ -8,9 +8,11 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Dependency directories
-node_modules/
-dist/
-dist-ssr/
+/node_modules/
+/node_modules
+/dist/
+/dist
+/dist-ssr/
 *.local
 
 # Editor directories and files
