@@ -1,28 +1,28 @@
-import React from 'react';
-
 const experiences = [
   {
-    title: 'Senior Software Engineer (Contractor)',
+    title: 'Sr. Software Engineer (Contractor)', // Updated title
     company: 'LinkedIn',
     location: 'Mountain View, CA',
-    period: 'Oct 2024 - Present',
+    period: 'October 2024 - Present', // Updated period
     description: [
-      'Designed and integrated FastAPI to streamline connections with ServiceNow, reducing process execution times by 30%',
-      'Built new FastAPI endpoints to centralize on-call team information and handle diverse user queries for Interanl Chatbot',
-      'Migrated legacy background daemons to Temporal for fault-tolerant, stateful workflows'
+      'API Development & Integration: Integrated ServiceNow and JIRA to build an AI-driven automation solution that analyzes IT tickets, mines internal knowledge bases for solutions, and auto-closes confirmed ticket improving MTTR by ~40-45%, lowering operational costs by 30 -35 % significantly improved engineering productivity and quality.', // Updated description
+      'Backend Migration & Scalability: Led a complete backend migration of an internal chatbot from Java to Python, consolidating fragmented codebases into a single multi-tier system with asynchronous workflows. Improved operational efficiency by ~40%, lowering infrastructure costs and enabling 24x7 reliability.', // Updated description
+      'Asynchronous Daemon Orchestration: Implemented Temporal for migrating legacy background daemons into fault-tolerant workflows. Enhanced issue detection through real-time logs and drastically minimized downtime via automatic retries and improved operational visibility.', // Updated description
+      'Build & Dependency Optimization: Refactored ~45% of redundant dependencies in the chatbot package, reducing build times and package size by nearly half, bolstering continuous integration speeds and developer satisfaction.' // Updated description
     ]
   },
   {
-    title: 'Tech Lead – Business Analyst & Data / Software Engineer',
+    title: 'Software Engineer/ Tech Lead – Business Data Analyst', // Updated title
     company: 'RFXCEL (Part of Antares Vision)',
     location: 'San Ramon, CA',
-    period: 'May 2023 - Dec 2024',
+    period: 'May 2023 – Dec 2024', // Updated period
     description: [
-      'Led development of data-driven systems using Elasticsearch and NoSQL, reducing data retrieval latency by 50%',
-      'Designed custom ETL pipeline in Java, transforming data from SQL to NoSQL',
-      'Implemented custom NoSQL data model in Elasticsearch for optimized data retrieval',
-      'Led analytics initiatives using Python, SQL, Tableau, and Generative AI LLMs',
-      'Developed Java-based public API for AbbVie\'s Luprolink platform'
+      'Public API Development for SAP Integration: Designed, developed, and implemented a Java-based public API for AbbVie’s Luprolink platform to automate data processing between their SAP system and the platform. This solution eliminated manual order creation and enabled real-time data synchronization, accelerating order processing by 30%, and improved system scalability.', // Updated description
+      'Expectation Management Feature: Designed and developed an Exception Management Email Configuration feature using Java (Spring Boot) and Angular, enabling dynamic email handling via REST API and improving exception notifications for 500+ enterprise users.', // Updated description
+      'Analytics System Design & Implementation: Spearheaded the design, development, and implementation of a comprehensive supply chain analytics dashboard for the Kingdom of Bahrain, their largest revenue client. Despite ambiguous requirements and no pre-existing data infrastructure, I architected a secure data pipeline that migrated critical SQL data to a NoSQL system using Elasticsearch. This initiative reduced data retrieval latency by 50%, enhanced real-time decision-making, and drove a 25% improvement in operational efficiency.', // Updated description
+      'Advanced Data Analytics & Business Insights: Led data-driven analytics using Python, SQL, Tableau, and Generative AI to develop predictive models for supplier performance. Delivered actionable insights to key clients, boosting supplier efficiency by 30% and reducing manual processing workload by 40%, thereby enhancing decision-making and reporting accuracy.',
+      'Operational Cost Data Analysis: Conducted a profitability analysis employing innovative cost-saving strategies, including migrating from Windows to Linux and moving six-year-old data to cold storage. These measures cut operational expenses by 15%, boosted system performance by 10%, and improved financial stability through optimized resource allocation.',
+      'AI-Driven Automation for Supplier Intelligence & Cost Optimization: Deployed a Generative AI tool for real-time SQL database querying, eliminating manual supplier data retrieval and reducing ticket resolution time by 35-40%. Automated DSCSA compliance data management, thus enhancing operational efficiency and resource allocation.'
     ]
   },
   {
@@ -38,19 +38,19 @@ const experiences = [
     ]
   },
   {
-    title: 'Manager - Data Analyst – Supply Chain Operations',
-    company: 'VVF India Limited',
+    title: 'Manager - Business & Data Analyst (Supply Chain)', // Updated title
+    company: 'Vvf India Limited', // Updated company name
     location: 'Mumbai, India',
     period: 'Dec 2017 - Aug 2022',
     description: [
-      'Led SAP implementation project for GST compliance',
-      'Conducted inventory analysis using SQL and Python, reducing inventory by 25%',
-      'Built predictive models for cost and production analytics, reducing losses by 22%',
-      'Created demand forecasting models improving accuracy by 20%'
+      'GST-Ready SAP Implementation: Led the SAP implementation project to meet new GST requirements. Streamlined end-to-end processes—from purchase orders to cash flow—ensuring on-time and fully compliant deployment.', // Updated description
+      'Global Inventory Analysis: Conducted in-depth inventory data analysis by creating segmentation models using SQL and Python. Identified slow-moving, obsolete, and dead stock through data clustering, leading to inventory reductions of 25% and savings of $X million.', // Updated description
+      'Manufacturing Cost Analysis: Built predictive models using Python for cost and production analytics, detecting manufacturing bottlenecks and operational inefficiencies. Reduced manufacturing losses by 22% through data-driven Strategic Planning, Capacity Management and corrective actions, resulting in annual savings of $X million.', // Updated description
+      'Forecasting & Demand Planning Analytics: Created demand forecasting models using Excel, SQL, and Tableau by integrating historical sales, market trends, and supplier data. Improved forecast accuracy by 20%, reduced stockouts, and increased on-time delivery rates by optimizing data-driven planning processes.' // Updated description
     ]
   },
   {
-    title: 'Deputy Manager - Business Analyst',
+    title: 'Deputy Manager - Project Management',
     company: 'IPCL',
     location: 'Kolkata, India',
     period: 'Mar 2016 - Nov 2017',
@@ -72,7 +72,7 @@ const experiences = [
     ]
   },
   {
-    title: 'Assistant Project Manager',
+    title: 'Assistant Manager - Project Management',
     company: 'Abhijeet Projects',
     location: 'Ranchi, India',
     period: 'Sep 2010 - Jan 2013',
@@ -83,7 +83,7 @@ const experiences = [
     ]
   },
   {
-    title: 'Assistant Project Manager',
+    title: 'Assistant Manager - Project Management',
     company: 'Airox Nigen',
     location: 'Gurgram, India',
     period: 'Apr 2009 - Sep 2010',
