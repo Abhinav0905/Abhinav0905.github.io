@@ -149,9 +149,9 @@ export function Experience() {
                     </div>
                     <span className="text-sm text-gray-500">{exp.period}</span>
                   </div>
-                  <ul className="mt-2 space-y-1 list-disc list-inside text-gray-600 text-sm">
+                  <ul className="mt-2 space-y-1 list-disc pl-5 text-gray-600 text-sm">
                     {exp.description.map((item, i) => (
-                      <li key={i}>{item}</li>
+                      <li key={i} className="pl-2 text-justify">{item}</li>
                     ))}
                   </ul>
                 </div>
