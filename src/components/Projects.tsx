@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 import resumeParserImg from '../assets/images/projects/resume_parser_pro.jpeg';
 import jiraAIImg from '../assets/images/projects/JiraAI.png';
+import whatsappAIImg from '../assets/images/projects/whatsapp-rental-ai.png';
 import releaseNoteImg from '../assets/images/projects/Release_Note.png';
 import jobGenieImg from '../assets/images/projects/JobGenie - Job Finder.png';
 import pythonBookImg from '../assets/images/projects/Python Book.png';
@@ -10,7 +11,7 @@ import supplierScoreImg from '../assets/images/projects/Predecitive Supplier Sco
 import ticketPredictorImg from '../assets/images/projects/Ticket Predictor.png';
 
 type ProjectStatus = 'completed' | 'in-progress' | 'planning' | 'poc';
-type ProjectCategory = 'data-analytics' | 'ml-ai' | 'process-automation' | 'api' | 'other';
+type ProjectCategory = 'data-analytics' | 'ml-ai' | 'process-automation' | 'api' | 'agentic-ai' | 'other';
 
 interface Project {
   title: string;
@@ -25,6 +26,22 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: 'WhatsApp Rental Agreement Assistant',
+    description: 'Developed an intelligent WhatsApp chatbot that helps tenants understand their rental agreements in plain English. The system uses vector database storage for documents, OpenAI\'s Agentic SDK for intelligent search and response generation, and Twilio for WhatsApp integration. Added maintenance ticket creation feature allowing users to report issues with photos and natural language descriptions.',
+    image: whatsappAIImg,
+    technologies: ['OpenAI Agentic SDK', 'Vector DB', 'Twilio', 'WhatsApp API', 'Python', 'FastAPI'],
+    status: 'completed',
+    category: 'agentic-ai',
+    github: 'https://github.com/Abhinav0905/whatsapp-rental-ai',
+    demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7314569381001285632/',
+    highlights: [
+      'Instant answers to rental queries in plain English with section references',
+      'Zero-friction user experience - just text on WhatsApp, no apps to install',
+      'Photo-enabled maintenance ticket creation with natural language description',
+      'Simplified access to legal information without lawyer consultation'
+    ]
+  },
   {
     title: 'JIRA Ticket Analysis Dashboard with NLP',
     description: 'Developed an advanced Python-based analytics dashboard using Streamlit that leverages OpenAI’s GPT for AI-powered ticket categorization, interactive Plotly visualizations, and real-time JIRA REST API integration. Engineered robust features including efficient caching, enterprise-grade security with rate limiting, and a natural language query interface to deliver dynamic insights into ticket trends and category distribution.',
@@ -142,6 +159,7 @@ const categoryLabels: Record<ProjectCategory, string> = {
   'ml-ai': 'Machine Learning & AI',
   'process-automation': 'Process Automation',
   'api': 'API Development',
+  'agentic-ai': 'Agentic AI',
   'other': 'Other'
 };
 
