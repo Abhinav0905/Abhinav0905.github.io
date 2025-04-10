@@ -8,6 +8,7 @@ import pythonBookImg from '../assets/images/projects/Python Book.png';
 import sqlConverterImg from '../assets/images/projects/Natural Language to SQL.png';
 import supplierScoreImg from '../assets/images/projects/Predecitive Supplier Score Card.png';
 import ticketPredictorImg from '../assets/images/projects/Ticket Predictor.png';
+import placeholderImg from '../assets/images/projects/jira-escalation.jpeg'; // Using an existing image as a placeholder
 
 type ProjectStatus = 'completed' | 'in-progress' | 'planning' | 'poc';
 type ProjectCategory = 'data-analytics' | 'ml-ai' | 'process-automation' | 'api' | 'other';
@@ -27,7 +28,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'JIRA Ticket Analysis Dashboard with NLP',
-    description: 'Developed an advanced Python-based analytics dashboard using Streamlit that leverages OpenAI’s GPT for AI-powered ticket categorization, interactive Plotly visualizations, and real-time JIRA REST API integration. Engineered robust features including efficient caching, enterprise-grade security with rate limiting, and a natural language query interface to deliver dynamic insights into ticket trends and category distribution.',
+    description: 'Developed an advanced Python-based analytics dashboard using Streamlit that leverages OpenAI\'s GPT for AI-powered ticket categorization, interactive Plotly visualizations, and real-time JIRA REST API integration. Engineered robust features including efficient caching, enterprise-grade security with rate limiting, and a natural language query interface to deliver dynamic insights into ticket trends and category distribution.',
     image: jiraAIImg,
     technologies: ['Python', 'NLP', 'Machine Learning', 'Jira API', 'scikit-learn'],
     status: 'completed',
@@ -38,6 +39,21 @@ const projects: Project[] = [
       'Reduced ticket triage time by ~25%',
       'Implemented secure rate-limiting for enterprise use',
       'Increased visibility into ticket trends and category distribution'
+    ]
+  },
+  {
+    title: 'RentAI: WhatsApp Rental Agreement Assistant',
+    description: 'Built an intelligent WhatsApp assistant that translates complex rental agreements into plain English, allowing tenants to easily understand their legal rights and obligations without needing to consult a lawyer. The system uses OpenAI\'s Agentic SDK to process natural language queries about lease terms, providing clear answers with section references directly through WhatsApp.',
+    image: placeholderImg, // Using placeholder image until a proper image is added
+    technologies: ['OpenAI', 'Agentic AI', 'Vector Database', 'WhatsApp API', 'Twilio', 'Document Intelligence'],
+    status: 'completed',
+    category: 'ml-ai',
+    demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7314569381001285632/',
+    highlights: [
+      'Empowers tenants by making legal information accessible 24/7',
+      'Processes natural language queries like "What\'s the pet policy?"',
+      'Provides clear answers with section references from lease documents',
+      'Future roadmap includes maintenance ticket submission via WhatsApp'
     ]
   },
   {
@@ -61,16 +77,16 @@ const projects: Project[] = [
     technologies: ['Python', 'FastAPI'],
     status: 'completed',
     category: 'other',
-    github: 'https://github.com/Abhinav0905/resume_parser_pro',
+    github: 'https://github.com/Abhinav0905/resume_parser_pro'
   },
   {
     title: 'Natural Language to SQL Converter',
-    description: 'Built a natural language processing system that converts plain English queries into SQL statements, enabling non-technical users to query databases using everyday language. Supports complex queries and multiple database schemas.',
+    description: 'Built a natural language processing system using Agentic AI that converts plain English queries into SQL statements, enabling non-technical users to query databases using everyday language. The autonomous agent understands context, refines queries, and handles complex database relationships to produce accurate SQL statements across multiple database schemas.',
     image: sqlConverterImg,
     technologies: ['Python', 'NLP', 'SQL', 'Transformers', 'FastAPI'],
     status: 'completed',
     category: 'ml-ai',
-    github: 'https://github.com/yourusername/english-to-sql',
+    github: 'https://github.com/Abhinav0905/GayaAi_Text-to-SQL',
     highlights: [
       'Democratized data access for non-technical stakeholders',
       'Supports complex queries & multiple DB schemas'
@@ -220,11 +236,17 @@ export function Projects() {
               key={index}
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover"
+                />
+              ) : (
+                <div className="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">
+                  No Image Available
+                </div>
+              )}
               <div className="p-6">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-semibold">{project.title}</h3>
