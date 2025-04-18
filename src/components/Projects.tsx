@@ -48,6 +48,7 @@ const projects: Project[] = [
     technologies: ['OpenAI', 'Agentic AI', 'Vector Database', 'WhatsApp API', 'Twilio', 'Document Intelligence'],
     status: 'completed',
     category: 'ml-ai',
+    github: 'https://github.com/Abhinav0905/Rent_Assistant_Agent',
     demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7314569381001285632/',
     highlights: [
       'Empowers tenants by making legal information accessible 24/7',
