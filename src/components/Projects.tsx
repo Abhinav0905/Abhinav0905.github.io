@@ -8,7 +8,7 @@ import pythonBookImg from '../assets/images/projects/Python Book.png';
 import sqlConverterImg from '../assets/images/projects/Natural Language to SQL.png';
 import supplierScoreImg from '../assets/images/projects/Predecitive Supplier Score Card.png';
 import ticketPredictorImg from '../assets/images/projects/Ticket Predictor.png';
-import placeholderImg from '../assets/images/projects/jira-escalation.jpeg'; // Using an existing image as a placeholder
+import RentAssistant from '../assets/images/projects/RentAssistant.png';
 
 type ProjectStatus = 'completed' | 'in-progress' | 'planning' | 'poc';
 type ProjectCategory = 'data-analytics' | 'ml-ai' | 'process-automation' | 'api' | 'other';
@@ -44,7 +44,7 @@ const projects: Project[] = [
   {
     title: 'RentAI: WhatsApp Rental Agreement Assistant',
     description: 'Built an intelligent WhatsApp assistant that translates complex rental agreements into plain English, allowing tenants to easily understand their legal rights and obligations without needing to consult a lawyer. The system uses OpenAI\'s Agentic SDK to process natural language queries about lease terms, providing clear answers with section references directly through WhatsApp.',
-    image: placeholderImg, // Using placeholder image until a proper image is added
+    image: RentAssistant, 
     technologies: ['OpenAI', 'Agentic AI', 'Vector Database', 'WhatsApp API', 'Twilio', 'Document Intelligence'],
     status: 'completed',
     category: 'ml-ai',
