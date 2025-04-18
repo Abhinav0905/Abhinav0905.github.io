@@ -1,0 +1,46 @@
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*~
+*.swp
+*.swo
+
+# Compiled object files
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Compiled Java files
+*.class
+
+# macOS specific
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Database files
+*.sqlite
+*.db
+*.db-journal
+
+# Build artifacts (common extensions within these)
+*.jar
+*.war
+
+# IDE specific files (often contain specific extensions)
+# Add specific IDE directories/files if needed, e.g., .vscode/, .idea/
+.vscode/
+.idea/
+
