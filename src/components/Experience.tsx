@@ -1,28 +1,23 @@
 const experiences = [
   {
-    title: 'Sr. Software Engineer (Contractor)', // Updated title
+    title: 'Sr. Software Engineer (Contractor)',
     company: 'LinkedIn',
     location: 'Mountain View, CA',
-    period: 'October 2024 - Present', // Updated period
+    period: 'October 2024 - Present',
     description: [
-      'API Development & Integration: Integrated ServiceNow and JIRA to build an AI-driven automation solution that analyzes IT tickets, mines internal knowledge bases for solutions, and auto-closes confirmed ticket improving MTTR by ~40-45%, lowering operational costs by 30 -35 % significantly improved engineering productivity and quality.', // Updated description
-      'Backend Migration & Scalability: Led a complete backend migration of an internal chatbot from Java to Python, consolidating fragmented codebases into a single multi-tier system with asynchronous workflows. Improved operational efficiency by ~40%, lowering infrastructure costs and enabling 24x7 reliability.', // Updated description
-      'Asynchronous Daemon Orchestration: Implemented Temporal for migrating legacy background daemons into fault-tolerant workflows. Enhanced issue detection through real-time logs and drastically minimized downtime via automatic retries and improved operational visibility.', // Updated description
-      'Build & Dependency Optimization: Refactored ~45% of redundant dependencies in the chatbot package, reducing build times and package size by nearly half, bolstering continuous integration speeds and developer satisfaction.' // Updated description
+      'Product Development - Employee Productivity Platform: Led end-to-end development of multiple features for an Internal Q&A chatbot aimed at addressing common employee needs ranging from automated ticket resolution, internal knowledge-based search and related administrative tasks. Developed and maintained python based 5 microservices for this product achieving an adoption rate of 65% in 2 months and reducing mean ticket time resolution (MTTR) by 45%',
+      'Engineering Excellence: Led an effort to increase innovation agility in software development by modernizing the java legacy codebases into a single Python/FastAPI platform—decommissioned three Java VMs. Modernized the CI pipeline to achieve 40% faster build times, implemented automated monitoring, and migrated employee data-pipeline daemons to Temporal-based workflows—eliminating 95% of failures, reclaiming eight engineer-hours per week, and boosting pipeline reliability to 99.9% uptime.'
     ]
   },
   {
-    title: 'Software Engineer/ Tech Lead – Business Data Analyst', // Updated title
-    company: 'RFXCEL (Part of Antares Vision)',
+    title: 'Software Engineer',
+    company: 'RFXCEL',
     location: 'San Ramon, CA',
-    period: 'May 2023 – Dec 2024', // Updated period
+    period: 'May 2023 - Dec 2024',
     description: [
-      'Public API Development for SAP Integration: Designed, developed, and implemented a Java-based public API for AbbVie’s Luprolink platform to automate data processing between their SAP system and the platform. This solution eliminated manual order creation and enabled real-time data synchronization, accelerating order processing by 30%, and improved system scalability.', // Updated description
-      'Expectation Management Feature: Designed and developed an Exception Management Email Configuration feature using Java (Spring Boot) and Angular, enabling dynamic email handling via REST API and improving exception notifications for 500+ enterprise users.', // Updated description
-      'Analytics System Design & Implementation: Spearheaded the design, development, and implementation of a comprehensive supply chain analytics dashboard for the Kingdom of Bahrain, their largest revenue client. Despite ambiguous requirements and no pre-existing data infrastructure, I architected a secure data pipeline that migrated critical SQL data to a NoSQL system using Elasticsearch. This initiative reduced data retrieval latency by 50%, enhanced real-time decision-making, and drove a 25% improvement in operational efficiency.', // Updated description
-      'Advanced Data Analytics & Business Insights: Led data-driven analytics using Python, SQL, Tableau, and Generative AI to develop predictive models for supplier performance. Delivered actionable insights to key clients, boosting supplier efficiency by 30% and reducing manual processing workload by 40%, thereby enhancing decision-making and reporting accuracy.',
-      'Operational Cost Data Analysis: Conducted a profitability analysis employing innovative cost-saving strategies, including migrating from Windows to Linux and moving six-year-old data to cold storage. These measures cut operational expenses by 15%, boosted system performance by 10%, and improved financial stability through optimized resource allocation.',
-      'AI-Driven Automation for Supplier Intelligence & Cost Optimization: Deployed a Generative AI tool for real-time SQL database querying, eliminating manual supplier data retrieval and reducing ticket resolution time by 35-40%. Automated DSCSA compliance data management, thus enhancing operational efficiency and resource allocation.'
+      'Product Development: Legacy product: two features: (a) Escalation management: Developed Java Spring Boot REST APIs and an Angular UI to enable Walgreens and its distributors to configure exception rules in real time. Empowered users to define alerts on the fly—cutting resolution time by 40% and reducing operational losses (support staffing and logistics) by $X K per year. (b) Automated real-time inventory & order synchronization: Developed a Java Spring Boot public API to integrate RfXcel\'s platform with Manufacturer (AbbVie) SAP system—automating 100% of order handoffs, eliminating manual, error-prone updates, ensuring 100% accurate, up-to-date inventory and order status, and saving $X K per month in labor costs.',
+      'Product Development – Real-Time Inventory Lifecycle Dashboard: Built a SQL→ Elasticsearch pipeline feeding an Elasticsearch index and Kibana dashboard to deliver on-demand, country-level inventory and supply-chain insights. Reduced data-query latency by 50%, boosted operational efficiency by 25%, upsold the existing traceability platform to pharma clients, and generated $X M in additional revenue. Empowered government regulators, suppliers, and manufacturers with actionable, real-time data.',
+      'Internal Productivity: Leveraged GenAI to prototype and launch several tools for internal productivity automation such as Text2SQL Query Assistant: Built a GenAI-powered tool using OpenAI\'s API and AWS Redshift to translate natural-language prompts into SQL queries for Customer Support Analysts. Reduced support-ticket processing time by 45%, eliminated three contractor roles, and saved $X K per month. Automated Release-Notes Generator: Developed a pipeline leveraging the JIRA API, Confluence data, and OpenAI to draft customer-friendly release notes automatically at the end of each sprint. Saved three man-days per sprint and increased customer satisfaction by 65%.'
     ]
   },
   {
@@ -56,8 +51,6 @@ const experiences = [
     period: 'Mar 2016 - Nov 2017',
     description: [
       'Engineered cost-effective business cases for coal procurement, delivering substantial savings',
-      'Negotiated long-term Power Purchase Agreements (PPA) with government entities, boosting revenue',
-      'Implemented SAP System\'s PM & MM Module, enhancing organizational efficiency by 25%'
     ]
   },
   {
