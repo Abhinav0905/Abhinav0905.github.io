@@ -104,7 +104,7 @@ const education = [
     period: '2005 - 2009'
   },
   {
-    degree: 'Computer Science & Engineering (Completed 5/8 semesters)',
+    degree: 'Computer Science & Engineering (Elective)',
     school: 'Sathyabama Deemed University',
     location: 'Chennai, India',
     period: '2006 - 2009'
