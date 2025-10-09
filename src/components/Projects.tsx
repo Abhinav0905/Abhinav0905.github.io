@@ -9,6 +9,7 @@ import sqlConverterImg from '../assets/images/projects/Natural Language to SQL.p
 import supplierScoreImg from '../assets/images/projects/Predecitive Supplier Score Card.png';
 import ticketPredictorImg from '../assets/images/projects/Ticket Predictor.png';
 import RentAssistant from '../assets/images/projects/RentAssistant.png';
+import JiraDCIM from '../assets/images/projects/JiraDCIM.png';
 
 type ProjectStatus = 'completed' | 'in-progress' | 'planning' | 'poc';
 type ProjectCategory = 'data-analytics' | 'ml-ai' | 'process-automation' | 'api' | 'other';
@@ -143,6 +144,21 @@ const projects: Project[] = [
     highlights: [
       'Helps support teams proactively manage high-risk tickets',
       'Utilizes sentiment analysis to gauge escalation likelihood'
+    ]
+  },
+  {
+    title: "Data Center Infrastructure Risk Management & Predictive Analytics Dashboard",
+    description: "Engineered an advanced real-time risk management system for data center operations that seamlessly integrates JIRA tracking with infrastructure metrics. The system polls JIRA every 60 seconds to analyze issue comments, leveraging GPT-4.1 for intelligent risk classification and automated P50/P90 delivery forecasting. Implemented Monte Carlo simulations for precise risk assessment, while monitoring critical infrastructure metrics through SNMP/IPMI integration. This comprehensive solution enables proactive risk mitigation and optimized resource allocation across data center operations.",
+    image: JiraDCIM,
+    technologies: ["Python", "JIRA API", "SQLAlchemy", "GPT-4", "Monte Carlo", "SNMP", "IPMI"],
+    status: 'completed',
+    category: 'ml-ai',
+    github: 'https://github.com/Abhinav0905/DCIM_Risk_Management',
+    demo: 'https://www.linkedin.com/posts/abhinav-kumar-2b0752169_whentechprojectdelaysmeetdatacenterinventory-activity-7142190124510478336-ZIAY',
+    highlights: [
+      'Real-time risk analysis and forecasting',
+      'Integrates with data center infrastructure metrics',
+      'Utilizes advanced Monte Carlo simulations for risk assessment'
     ]
   }
 ];
