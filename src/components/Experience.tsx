@@ -40,8 +40,8 @@ const experiences = [
     location: 'Mumbai, India',
     period: 'Dec 2017 - Aug 2022',
     description: [
-      'GST-Ready SAP Implementation: Led the SAP implementation project to meet new GST requirements. Streamlined end-to-end processes—from purchase orders to cash flow—ensuring on-time and fully compliant deployment.', // Updated description
-      'Global Inventory Analysis: Conducted in-depth inventory data analysis by creating segmentation models using SQL and Python. Identified slow-moving, obsolete, and dead stock through data clustering, leading to inventory reductions of 25% and savings of $X million.', // Updated description
+      'Global Inventory Optimization Engine: Designed and built a quantitative segmentation framework (JIT, VMI) integrated into SAP —leveraged Python and SQL to map equipment to spare parts across plants, enabling accurate inventory classification reduced global inventory by 25%, freed up $1 M in working capital',
+      'Manufacturing Analytics & Loss-Reduction Module: Developed a Python-based predictive analytics product leveraging linear regression machine learning model, hypothesis testing, and variance analysis to pinpoint production inefficiencies. Presented Executive Tableau dashboard for the leadership group.  Eliminated 22% of manufacturing losses, and reduced manufacturing cost from $200/MT to $150/MT.',
       'Manufacturing Cost Analysis: Built predictive models using Python for cost and production analytics, detecting manufacturing bottlenecks and operational inefficiencies. Reduced manufacturing losses by 22% through data-driven Strategic Planning, Capacity Management and corrective actions, resulting in annual savings of $X million.', // Updated description
       'Forecasting & Demand Planning Analytics: Created demand forecasting models using Excel, SQL, and Tableau by integrating historical sales, market trends, and supplier data. Improved forecast accuracy by 20%, reduced stockouts, and increased on-time delivery rates by optimizing data-driven planning processes.' // Updated description
     ]
@@ -53,6 +53,7 @@ const experiences = [
     period: 'Mar 2016 - Nov 2017',
     description: [
       'Engineered cost-effective business cases for coal procurement, delivering substantial savings',
+      'Procurement Analytics & Demand Planning: Developed Excel- and SQL-based BOM and MRP dashboards to model material requirements for high-pressure pipeline projects—improving stock‐accuracy by 20% and reducing idle inventory by 15%.'
     ]
   },
   {
@@ -61,6 +62,7 @@ const experiences = [
     location: 'Noida, India',
     period: 'Feb 2013 - Mar 2017',
     description: [
+      'Operational Cost Modeling: Conducted in-depth cost studies across four production units; built BOQ-driven financial models and “what-if” scenarios that uncovered 8% in annual cost savings (≈$8 M)',
       'Led large-capex project from conception to completion, ensuring timely delivery of project objectives',
       'Secured Mega Power Project Status with Central Electricity Authority (CEA), achieving $32 million in cost savings',
       'Managed cross-functional teams to ensure project milestones were met on schedule'
