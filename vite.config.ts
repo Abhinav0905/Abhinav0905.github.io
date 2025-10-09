@@ -6,7 +6,7 @@ const __dirname = path.resolve()
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Abhinav0905.github.io/',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
