@@ -11,7 +11,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "repository": { "type": "git", "url": "git+https://github.com/Abhinav0905/Abhinav0905.github.io.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhinav0905/Abhinav0905.github.io.git"
+  },
   "homepage": "https://Abhinav0905.github.io",
   "dependencies": {
     "lucide-react": "^0.279.0",

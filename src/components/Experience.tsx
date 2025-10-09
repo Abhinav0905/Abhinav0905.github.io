@@ -35,7 +35,7 @@ const experiences = [
     ]
   },
   {
-    title: 'Manager - Business & Data Analyst (Supply Chain)', // Updated title
+    title: 'Staff - Business & Data Analyst (Supply Chain)', // Updated title
     company: 'Vvf India Limited', // Updated company name
     location: 'Mumbai, India',
     period: 'Dec 2017 - Aug 2022',
@@ -47,7 +47,7 @@ const experiences = [
     ]
   },
   {
-    title: 'Deputy Manager - Project Management',
+    title: 'Staff- Business Data Analyst',
     company: 'IPCL',
     location: 'Kolkata, India',
     period: 'Mar 2016 - Nov 2017',
@@ -56,7 +56,7 @@ const experiences = [
     ]
   },
   {
-    title: 'Deputy Manager - Project Management',
+    title: 'Staff - Projects & Operation Data Analyst',
     company: 'Bajaj Energy',
     location: 'Noida, India',
     period: 'Feb 2013 - Mar 2017',
@@ -67,7 +67,7 @@ const experiences = [
     ]
   },
   {
-    title: 'Assistant Manager - Project Management',
+    title: 'Senior - Project & Finance Data Analyst',
     company: 'Abhijeet Projects',
     location: 'Ranchi, India',
     period: 'Sep 2010 - Jan 2013',
@@ -78,7 +78,7 @@ const experiences = [
     ]
   },
   {
-    title: 'Assistant Manager - Project Management',
+    title: 'Senior-  Special Projects & Marketing  Data Analyst',
     company: 'Airox Nigen',
     location: 'Gurgram, India',
     period: 'Apr 2009 - Sep 2010',
