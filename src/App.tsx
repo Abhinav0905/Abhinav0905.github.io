@@ -1,8 +1,7 @@
-import React from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Download } from 'lucide-react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Experience } from './components/Experience';
+import { Research } from './components/Research';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { VisitorCounter } from './components/VisitorCounter';
@@ -14,6 +13,7 @@ function App() {
       <main>
         <Hero />
         <Experience />
+        <Research />
         <Projects />
         <Contact />
       </main>

@@ -1,5 +1,14 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState } from 'react';
+import Menu from 'lucide-react/dist/esm/icons/menu.js';
+import X from 'lucide-react/dist/esm/icons/x.js';
+
+const navItems = [
+  { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#research', label: 'Patents & Publications' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact' },
+];
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,11 +21,12 @@ export function Header() {
             Kumar Abhinav
           </a>
 
-          <nav className="hidden md:flex space-x-8">
-            <a href="#about" className="text-gray-600 hover:text-gray-900">About</a>
-            <a href="#experience" className="text-gray-600 hover:text-gray-900">Experience</a>
-            <a href="#projects" className="text-gray-600 hover:text-gray-900">Projects</a>
-            <a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a>
+          <nav className="hidden md:flex space-x-6">
+            {navItems.map((item) => (
+              <a key={item.href} href={item.href} className="text-sm font-medium text-gray-600 hover:text-gray-900">
+                {item.label}
+              </a>
+            ))}
           </nav>
 
           <button
@@ -31,10 +41,16 @@ export function Header() {
         {isMenuOpen && (
           <nav className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
-              <a href="#about" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>About</a>
-              <a href="#experience" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Experience</a>
-              <a href="#projects" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Projects</a>
-              <a href="#contact" className="text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>Contact</a>
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-gray-600 hover:text-gray-900"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              ))}
             </div>
           </nav>
         )}

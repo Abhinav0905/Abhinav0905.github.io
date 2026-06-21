@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Github, ExternalLink } from 'lucide-react';
+import ExternalLink from 'lucide-react/dist/esm/icons/external-link.js';
+import Github from 'lucide-react/dist/esm/icons/github.js';
 import resumeParserImg from '../assets/images/projects/resume_parser_pro.jpeg';
 import jiraAIImg from '../assets/images/projects/JiraAI.png';
 import releaseNoteImg from '../assets/images/projects/Release_Note.png';
@@ -27,6 +28,20 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: 'Small Language Model from Scratch',
+    description: 'Architected and trained a GPT-style transformer with 15.2M parameters in PyTorch, including token preprocessing, custom batching, optimized Apple M2 training, and an interactive generation interface with temperature and top-k controls.',
+    image: pythonBookImg,
+    technologies: ['PyTorch', 'Transformers', 'Python', 'LLM Training', 'Tokenization'],
+    status: 'completed',
+    category: 'ml-ai',
+    demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7382074871822032896/',
+    highlights: [
+      'Built the training loop and inference workflow from scratch',
+      'Achieved 97% accuracy and 1.03 perplexity on a domain-specific generation task',
+      'Optimized training with gradient accumulation, mixed precision, and thermal management'
+    ]
+  },
   {
     title: 'JIRA Ticket Analysis Dashboard with NLP',
     description: 'Developed an advanced Python-based analytics dashboard using Streamlit that leverages OpenAI\'s GPT for AI-powered ticket categorization, interactive Plotly visualizations, and real-time JIRA REST API integration. Engineered robust features including efficient caching, enterprise-grade security with rate limiting, and a natural language query interface to deliver dynamic insights into ticket trends and category distribution.',
@@ -272,6 +287,13 @@ export function Projects() {
                   </span>
                 </div>
                 <p className="text-gray-600 mb-4">{project.description}</p>
+                {project.highlights && (
+                  <ul className="list-disc pl-5 text-sm text-gray-600 space-y-1 mb-4">
+                    {project.highlights.map((highlight) => (
+                      <li key={highlight}>{highlight}</li>
+                    ))}
+                  </ul>
+                )}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
                     <span

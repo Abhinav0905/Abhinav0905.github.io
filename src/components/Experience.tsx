@@ -1,95 +1,63 @@
 const experiences = [
   {
-    title: 'Sr. Software Engineer (Contractor)',
-    company: 'LinkedIn',
-    location: 'Mountain View, CA',
-    period: 'October 2024 - Present',
+    title: 'Sr. Software Engineer (Full Stack)',
+    company: 'AiDash',
+    location: 'Palo Alto, CA',
+    period: 'Dec 2025 - Present',
+    summary:
+      'Building customer-facing product features and GenAI-driven solutions for an AI-first vertical SaaS company helping power utilities become more resilient with satellite intelligence and AI.',
     description: [
-      'Product Development - Employee Productivity Platform: Led end-to-end development of an internal GenAI Q&A chatbot on the Employee Productivity Platform, leveraging <span style="font-weight: bold; color: black;">Azure OpenAI Service (GPT-4)</span> for query intent detection, <span style="font-weight: bold; color: black;">OpenAI GPT-3.5-turbo and GPT-4 APIs</span> for automated ticket resolution, and <span style="font-weight: bold; color: black;">Pinecone- & Faiss-based RAG</span> for knowledge search. Architected and maintained <span style="font-weight: bold; color: black;">five Python microservices</span> for this platform—driving <span style="font-weight: bold; color: black;">65% adoption in 2 months</span> and cutting Mean Time to Resolution by <span style="font-weight: bold; color: black;">45%</span>.',
-      'Engineering Excellence: Led an effort to increase innovation agility in software development by modernizing the java legacy codebases into a single <span style="font-weight: bold; color: black;">Python/FastAPI platform</span>—decommissioned <span style="font-weight: bold; color: black;">three Java VMs</span>. Modernized the CI pipeline to achieve <span style="font-weight: bold; color: black;">40% faster</span> build times, implemented automated monitoring, and migrated employee data-pipeline daemons to <span style="font-weight: bold; color: black;">Temporal-based workflows orchestration</span>—eliminating <span style="font-weight: bold; color: black;">95% of failures</span>, reclaiming <span style="font-weight: bold; color: black;">eight engineer-hours per week</span>, and boosting pipeline reliability to <span style="font-weight: bold; color: black;">99.9% uptime</span>.',
-      'AI based Contract Finder Feature: Designed and implemented the <span style="font-weight: bold; color: black;">Contract Finder feature</span> in internal chatbot, leveraging <span style="font-weight: bold; color: black;">GenAI and LLM-based query intent detection</span> to enable secure, alias-restricted contract data retrieval across <span style="font-weight: bold; color: black;">Salesforce and Dynamics platforms</span>. Integrated <span style="font-weight: bold; color: black;">Databricks SQL and Cosmos DB</span> for dynamic access control and real-time search. Reduced manual lookup time by <span style="font-weight: bold; color: black;">833+ hours annually</span>, saving <span style="font-weight: bold; color: black;">$125K+</span> in productivity.'
-    ]
+      'Built the first stage of an Agentic Code Generation Platform that ingests Jira tickets, comments, and attachments; generates implementation plans; routes work through reviewer agents; and keeps human approval before downstream engineering workflows. Improved code-generation accuracy to ~80-85%, reduced trivial-ticket deployment time from 7 days to 2 days, and avoided two contractor hires, saving ~$50K annually.',
+      'Shipped NLP Smart Filtering with React, TypeScript, and FastAPI. LLM-based intent parsing plus deterministic hierarchical filters reduced utility operator setup from 2-3 minutes to under 10 seconds and improved wildfire-response workflows by ~60%.',
+      'Built ARIA, an Autonomous Risk Intelligence Assistant for alpha testing, using LangGraph and MCP multi-tool orchestration across telemetry, risk signals, and reporting. Enabled proactive monitoring across 10,000+ circuits and reduced manual oversight by ~80%.',
+      'Automated Jira ticket intelligence with Atlassian Rovo agents and Jira Automation, replacing an external triage tool with strict JSON contracts, normalized priority scoring, field validations, audit tracing, and resilient change triggers.',
+      'Built a tenant-aware CCP notification microservice using FastAPI, PostgreSQL, Django/DRF, and React for in-app and email notifications across job lifecycle, assignment, approval, and onboarding events.',
+    ],
   },
   {
-    title: 'Software Engineer/Business Data Analyst',
+    title: 'Sr. Software Engineer (Contractor)',
+    company: 'LinkedIn',
+    location: 'Sunnyvale, CA',
+    period: 'Oct 2024 - Dec 2025',
+    summary:
+      'Owned full-stack features for LinkedIn internal employee productivity systems serving 28K+ employees, partnering with Product, UX, and ITSM to ship measurable platform improvements.',
+    description: [
+      'Led an internal GenAI chatbot on the Employee Productivity Platform using Azure OpenAI GPT-4/GPT-4o, RAG on Azure AI Search and Glean, and Python/FastAPI microservices. Drove 65% adoption in 2 months, reduced MTTR by ~45%, saved ~$200K/year in infrastructure, and freed roughly 1 FTE of support capacity.',
+      'Integrated ServiceNow incident deflection, Contract Finder across Salesforce and Dynamics, and Franklin Finance PO lookup so support and finance teams could self-serve contract and payment details while cutting low-value ticket creation by ~30%.',
+      'Migrated LDAP, Slack user refresh, Cosmos priming, and Microsoft Graph working-hours pipelines into Temporal workflows, eliminating ~95% of pipeline failures and saving 416 engineering hours per year.',
+      'Designed an AI-powered test generation platform with Python, LangGraph, and Oracle that converts business documents into executable test scenarios and FK-aware synthetic data, reducing test-data preparation from days to ~90 seconds per run.',
+      'Built a marketing brief and asset automation pipeline with LangGraph and Azure OpenAI to parse briefs, classify assets, read Excel translation sheets, and produce downstream JSON for resize and translation workflows.',
+    ],
+  },
+  {
+    title: 'Software Engineer',
     company: 'RFXCEL',
     location: 'San Ramon, CA',
     period: 'May 2023 - Dec 2024',
+    summary:
+      'Partnered with sales engineering and product teams to ship AI, analytics, and platform features for healthcare and pharma clients including Cardinal, AbbVie, and Walgreens.',
     description: [
-      'Product Development: Legacy product: two features: (a) Escalation management: Developed Java Spring Boot REST APIs and an Angular UI to enable Walgreens and its distributors to configure exception rules in real time. Empowered users to define alerts on the fly—cutting resolution time by <span style="font-weight: bold; color: black;">40%</span> and reducing operational losses (support staffing and logistics) by <span style="font-weight: bold; color: black;">$1M per year</span>. (b) Automated real-time inventory & order synchronization: Developed a Java Spring Boot public API to integrate RfXcel\'s platform with Manufacturer (AbbVie) SAP system—automating <span style="font-weight: bold; color: black;">100%</span> of order handoffs, eliminating manual, error-prone updates, ensuring <span style="font-weight: bold; color: black;">100% accurate</span>, up-to-date inventory and order status, and saving <span style="font-weight: bold; color: black;">$200K per year</span> in labor costs.',
-      'Product Development – Real-Time Inventory Lifecycle Dashboard: Built a SQL→ Elasticsearch pipeline feeding an Elasticsearch index and Kibana dashboard to deliver on-demand, country-level inventory and supply-chain insights. Reduced data-query latency by <span style="font-weight: bold; color: black;">50%</span>, boosted operational efficiency by <span style="font-weight: bold; color: black;">25%</span>, upsold the existing traceability platform to pharma clients, and generated <span style="font-weight: bold; color: black;">$1M</span> in additional revenue. Empowered government regulators, suppliers, and manufacturers with actionable, real-time data.',
-      'Internal Productivity: Leveraged GenAI (LLM Models) to prototype and launch several tools for internal productivity automation such as Text2SQL Query Assistant: Built a GenAI-powered tool using OpenAI\'s API (GPT-4) and AWS Redshift to translate natural-language prompts into SQL queries for Customer Support Analysts. Reduced support-ticket processing time by <span style="font-weight: bold; color: black;">45%</span>, reduced the dependency to hire three contractor roles, and saved <span style="font-weight: bold; color: black;">$100K annually</span>. Automated Release-Notes Generator: Developed a pipeline leveraging the JIRA API, Confluence data, and OpenAI to draft customer-friendly release notes automatically at the end of each sprint. Saved <span style="font-weight: bold; color: black;">576 Engineering Working hours per year</span> and increased customer satisfaction by <span style="font-weight: bold; color: black;">65%</span>.',
-      'Gen AI based Project Management: Leveraged GenAI to build a conversational Jira assistant—enabling natural-language ticket queries, automated intent classification, and escalation-risk scoring from ticket comments; reduced average triage time by <span style="font-weight: bold; color: black;">45%</span>, prevented <span style="font-weight: bold; color: black;">~20 escalations/month</span>, and saved <span style="font-weight: bold; color: black;">~16 engineer-hours per week</span> (<span style="font-weight: bold; color: black;">~832 hours/year</span>), cutting support costs by <span style="font-weight: bold; color: black;">~$120K annually</span>.'
-    ]
+      'Built GenAI productivity tools including a Text2SQL assistant using OpenAI and AWS Redshift, reducing support-ticket processing time by 45%, avoiding three contractor roles, and saving ~$100K annually.',
+      'Developed an automated release-notes generator using Jira, Confluence, and OpenAI that saved 576 engineering hours annually and improved customer-facing release communication.',
+      'Built a SQL-to-Elasticsearch pipeline and Kibana dashboard for real-time inventory lifecycle analytics, reducing query latency by 50%, improving operational efficiency by 25%, and supporting $1M in additional revenue.',
+      'Delivered Java Spring Boot APIs and Angular interfaces for escalation management and real-time inventory/order synchronization with SAP, reducing resolution time by 40% and saving clients an estimated $1.2M annually.',
+      'Built a LangGraph-based Jira conversational assistant that turns natural-language requests into ticket actions and escalation-risk scoring, cutting triage from 30-40 minutes to under 4 minutes per incident.',
+    ],
   },
   {
-    title: 'Business Analyst (Part Time)',
-    company: 'North California Small Business Development Centre',
-    location: 'Hayward, CA',
-    period: 'Oct 2022 - May 2023',
+    title: 'Staff - Business Data Analyst',
+    company: 'Early Career: VVF, IPCL, Bajaj Energy, Abhijeet Projects, Airox Nigen',
+    location: 'Chennai, Mumbai, Kolkata, Noida, Ranchi, India',
+    period: 'Apr 2009 - Aug 2022',
+    summary:
+      'Led supply-chain, manufacturing, project, and finance analytics initiatives across energy, chemical, and industrial operations before transitioning into AI software engineering.',
     description: [
-      'Provided market research, competitor analysis, and consumer insights to local business owners',
-      'Launched 8 clients’ online stores on the SBDC platform, collaborating on pricing, inventory, shipping, and Google Analytics, achieving a 75% success rate.',
-      'Created a WordPress website for FETA project supporting local food vendors',
-      'Managed IT resources for the FETA campaign initiatives at the university'
-    ]
+      'Led requirements and stakeholder management across Operations, Finance, Procurement, and Plant leadership, translating business pain points into BRD/FRD, user stories, dashboards, and process improvements.',
+      'Created SAP data dictionaries and master-data mapping linking equipment, spare parts, and consumption history across plants to standardize classification and improve reporting reliability.',
+      'Designed a global inventory optimization engine using Python, SQL, JIT, and VMI segmentation, reducing global inventory by 25% and freeing $1M in working capital.',
+      'Built manufacturing analytics and loss-reduction models using regression, hypothesis testing, variance analysis, and Tableau executive dashboards, eliminating 22% of manufacturing losses and reducing cost from $200/MT to $150/MT.',
+    ],
   },
-  {
-    title: 'Staff - Business & Data Analyst (Supply Chain)', // Updated title
-    company: 'Vvf India Limited', // Updated company name
-    location: 'Mumbai, India',
-    period: 'Dec 2017 - Aug 2022',
-    description: [
-      'Global Inventory Optimization Engine: Designed and built a quantitative segmentation framework (JIT, VMI) integrated into SAP —leveraged Python and SQL to map equipment to spare parts across plants, enabling accurate inventory classification reduced global inventory by 25%, freed up $1 M in working capital',
-      'Manufacturing Analytics & Loss-Reduction Module: Developed a Python-based predictive analytics product leveraging linear regression machine learning model, hypothesis testing, and variance analysis to pinpoint production inefficiencies. Presented Executive Tableau dashboard for the leadership group.  Eliminated 22% of manufacturing losses, and reduced manufacturing cost from $200/MT to $150/MT.',
-      'Manufacturing Cost Analysis: Built predictive models using Python for cost and production analytics, detecting manufacturing bottlenecks and operational inefficiencies. Reduced manufacturing losses by 22% through data-driven Strategic Planning, Capacity Management and corrective actions, resulting in annual savings of $X million.', // Updated description
-      'Forecasting & Demand Planning Analytics: Created demand forecasting models using Excel, SQL, and Tableau by integrating historical sales, market trends, and supplier data. Improved forecast accuracy by 20%, reduced stockouts, and increased on-time delivery rates by optimizing data-driven planning processes.' // Updated description
-    ]
-  },
-  {
-    title: 'Staff- Business Data Analyst',
-    company: 'IPCL',
-    location: 'Kolkata, India',
-    period: 'Mar 2016 - Nov 2017',
-    description: [
-      'Engineered cost-effective business cases for coal procurement, delivering substantial savings',
-      'Procurement Analytics & Demand Planning: Developed Excel- and SQL-based BOM and MRP dashboards to model material requirements for high-pressure pipeline projects—improving stock‐accuracy by 20% and reducing idle inventory by 15%.'
-    ]
-  },
-  {
-    title: 'Staff - Projects & Operation Data Analyst',
-    company: 'Bajaj Energy',
-    location: 'Noida, India',
-    period: 'Feb 2013 - Mar 2017',
-    description: [
-      'Operational Cost Modeling: Conducted in-depth cost studies across four production units; built BOQ-driven financial models and “what-if” scenarios that uncovered 8% in annual cost savings (≈$8 M)',
-      'Led large-capex project from conception to completion, ensuring timely delivery of project objectives',
-      'Secured Mega Power Project Status with Central Electricity Authority (CEA), achieving $32 million in cost savings',
-      'Managed cross-functional teams to ensure project milestones were met on schedule'
-    ]
-  },
-  {
-    title: 'Senior - Project & Finance Data Analyst',
-    company: 'Abhijeet Projects',
-    location: 'Ranchi, India',
-    period: 'Sep 2010 - Jan 2013',
-    description: [
-      'Orchestrated comprehensive oversight in contract management, and capex project planning',
-      'Secured excise duty waiver for Mega Power Project Status with Government of India\'s CEA, saving $15 million',
-      'Managed cross-functional teams to ensure project milestones were met on schedule'
-    ]
-  },
-  {
-    title: 'Senior-  Special Projects & Marketing  Data Analyst',
-    company: 'Airox Nigen',
-    location: 'Gurgram, India',
-    period: 'Apr 2009 - Sep 2010',
-    description: [
-      'Spearheaded design and launch of organization\'s website, enhancing online presence',
-      'Achieved 80% bid success rate through strategic business development and contract management',
-      'Implemented effective dashboarding techniques for improved project tracking and reporting'
-    ]
-  }
 ];
 
 const education = [
@@ -97,97 +65,105 @@ const education = [
     degree: 'M.S. in Business Analytics',
     school: 'California State University East Bay',
     location: 'Hayward, CA',
-    period: '2022 - 2023'
+    period: 'Aug 2022 - Dec 2023',
   },
   {
-    degree: 'B.Tech. in Chemical Engineering (Major)',
+    degree: 'B.Tech. in Chemical Engineering; Computer Science & Engineering Elective',
     school: 'Sathyabama Deemed University',
     location: 'Chennai, India',
-    period: '2005 - 2009'
+    period: 'Aug 2005 - Dec 2009',
   },
-  {
-    degree: 'Computer Science & Engineering (Elective)',
-    school: 'Sathyabama Deemed University',
-    location: 'Chennai, India',
-    period: '2006 - 2009'
-  }
 ];
 
 const skills = [
   {
-    category: 'Technical Skills',
-    items: ['Python', 'Java', 'FastAPI', 'MySQL', 'Elasticsearch', 'Kibana', 'Tableau', 'Streamlit', 'Langchain', 'Azure']
+    category: 'AI & Agentic Engineering',
+    items: ['OpenAI API', 'Azure OpenAI', 'LangGraph', 'RAG', 'Pinecone', 'Azure AI Search', 'MCP', 'LLM evals'],
   },
   {
-    category: 'Functional Skills',
-    items: ['Process Mapping', 'Agile', 'SDLC', 'Jira', 'Git']
-  }
+    category: 'Software Engineering',
+    items: ['Python', 'FastAPI', 'Java', 'Spring Boot', 'TypeScript', 'React', 'Angular', 'REST APIs', 'Temporal'],
+  },
+  {
+    category: 'Data & Analytics',
+    items: ['Advanced SQL', 'Elasticsearch', 'Kibana', 'AWS Redshift', 'PostgreSQL', 'Tableau', 'SAP'],
+  },
+  {
+    category: 'Product & Delivery',
+    items: ['Product discovery', 'Agile', 'Jira', 'System design', 'Stakeholder management', 'CI/CD', 'Git'],
+  },
+];
+
+const recognition = [
+  'Fully funded Ph.D. admission offer in Computer Science from University at Buffalo (SUNY), selected to work under Dr. Venu Govindaraju.',
+  'Career arc combining 4+ years of production AI/software engineering with 12+ years of analytics, operations, and supply-chain domain leadership.',
 ];
 
 export function Experience() {
   return (
     <section id="experience" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-          Experience & Education
-        </h2>
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">Experience</p>
+          <h2 className="text-3xl font-bold text-gray-950 mt-2">
+            Production AI, Enterprise Platforms, and Business Impact
+          </h2>
+          <p className="text-gray-600 mt-4 leading-7">
+            A portfolio of shipped GenAI systems, product features, data platforms, and automation programs with
+            measurable adoption, cost savings, reliability, and customer value.
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-xl font-semibold mb-6">Work Experience</h3>
-            <div className="space-y-8">
-              {experiences.map((exp, index) => (
-                <div key={index} className="border-l-2 border-gray-200 pl-4">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-semibold text-lg">{exp.title}</h4>
-                      <p className="text-gray-600">{exp.company}</p>
-                      <p className="text-sm text-gray-500">{exp.location}</p>
-                    </div>
-                    <span className="text-sm text-gray-500">{exp.period}</span>
+        <div className="grid lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.65fr)] gap-10">
+          <div className="space-y-8">
+            {experiences.map((exp) => (
+              <article key={`${exp.company}-${exp.period}`} className="border-l-4 border-emerald-600 pl-5">
+                <div className="flex flex-col md:flex-row md:justify-between md:gap-6">
+                  <div>
+                    <h3 className="font-semibold text-xl text-gray-950">{exp.title}</h3>
+                    <p className="text-gray-700 font-medium">{exp.company}</p>
+                    <p className="text-sm text-gray-500">{exp.location}</p>
                   </div>
-                  <ul className="mt-2 space-y-1 list-disc pl-5 text-gray-600 text-sm">
-                    {exp.description.map((item, i) => (
-                      <li key={i} className="pl-2 text-justify" dangerouslySetInnerHTML={{ __html: item }}></li>
-                    ))}
-                  </ul>
+                  <span className="text-sm font-semibold text-gray-600 mt-2 md:mt-1 md:text-right">{exp.period}</span>
                 </div>
-              ))}
-            </div>
+                <p className="mt-3 text-gray-600 leading-7">{exp.summary}</p>
+                <ul className="mt-3 space-y-2 list-disc pl-5 text-gray-600 text-sm leading-6">
+                  {exp.description.map((item) => (
+                    <li key={item} className="pl-1">{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
 
-          <div>
-            <div className="mb-12">
-              <h3 className="text-xl font-semibold mb-6">Education</h3>
-              <div className="space-y-6">
-                {education.map((edu, index) => (
-                  <div key={index} className="border-l-2 border-gray-200 pl-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h4 className="font-semibold text-lg">{edu.degree}</h4>
-                        <p className="text-gray-600">{edu.school}</p>
-                        <p className="text-sm text-gray-500">{edu.location}</p>
-                      </div>
-                      <span className="text-sm text-gray-500">{edu.period}</span>
-                    </div>
+          <aside className="space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold mb-5 text-gray-950">Education</h3>
+              <div className="space-y-5">
+                {education.map((edu) => (
+                  <div key={edu.degree} className="border border-gray-200 rounded-lg p-5 bg-gray-50">
+                    <h4 className="font-semibold text-gray-950">{edu.degree}</h4>
+                    <p className="text-gray-700 mt-1">{edu.school}</p>
+                    <p className="text-sm text-gray-500 mt-1">{edu.location}</p>
+                    <p className="text-sm font-medium text-emerald-700 mt-2">{edu.period}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-6">Skills</h3>
-              <div className="space-y-6">
-                {skills.map((category, index) => (
-                  <div key={index}>
-                    <h4 className="font-medium text-gray-900 mb-2">
+              <h3 className="text-xl font-semibold mb-5 text-gray-950">Core Skills</h3>
+              <div className="space-y-5">
+                {skills.map((category) => (
+                  <div key={category.category}>
+                    <h4 className="font-medium text-gray-900 mb-3">
                       {category.category}
                     </h4>
                     <div className="flex flex-wrap gap-2">
-                      {category.items.map((skill, skillIndex) => (
+                      {category.items.map((skill) => (
                         <span
-                          key={skillIndex}
-                          className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700"
+                          key={skill}
+                          className="px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-sm text-emerald-900"
                         >
                           {skill}
                         </span>
@@ -197,7 +173,16 @@ export function Experience() {
                 ))}
               </div>
             </div>
-          </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-5 text-gray-950">Recognition</h3>
+              <ul className="space-y-3 text-sm text-gray-600 leading-6">
+                {recognition.map((item) => (
+                  <li key={item} className="border-l-2 border-amber-400 pl-3">{item}</li>
+                ))}
+              </ul>
+            </div>
+          </aside>
         </div>
       </div>
     </section>

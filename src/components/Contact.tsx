@@ -1,5 +1,8 @@
-import React from 'react';
-import { Mail, Github, Linkedin, MapPin, Phone } from 'lucide-react';
+import Github from 'lucide-react/dist/esm/icons/github.js';
+import Linkedin from 'lucide-react/dist/esm/icons/linkedin.js';
+import Mail from 'lucide-react/dist/esm/icons/mail.js';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin.js';
+import Phone from 'lucide-react/dist/esm/icons/phone.js';
 
 export function Contact() {
   return (
@@ -12,7 +15,7 @@ export function Contact() {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <p className="text-gray-600">
-              I'm always interested in discussing new opportunities in data analytics, machine learning, and software development projects.
+              I'm interested in AI engineering, agentic workflows, RAG platforms, enterprise automation, and product teams that care about measurable business impact.
             </p>
           </div>
 
