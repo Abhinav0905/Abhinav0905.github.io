@@ -1,9 +1,24 @@
+import aidashLogo from '../assets/images/company-logos/aidash.png';
+import linkedinLogo from '../assets/images/company-logos/linkedin.svg';
+import rfxcelLogo from '../assets/images/company-logos/rfxcel.png';
+import vvfLogo from '../assets/images/company-logos/vvf.gif';
+import ipclLogo from '../assets/images/company-logos/ipcl.png';
+import bajajEnergyLogo from '../assets/images/company-logos/bajaj-energy.png';
+import abhijeetProjectsLogo from '../assets/images/company-logos/abhijeet-projects.svg';
+import airoxNigenLogo from '../assets/images/company-logos/airox-nigen.png';
+
+interface CompanyLogo {
+  name: string;
+  image: string;
+}
+
 const experiences = [
   {
     title: 'Sr. Software Engineer (Full Stack)',
     company: 'AiDash',
     location: 'Palo Alto, CA',
     period: 'Dec 2025 - Present',
+    logos: [{ name: 'AiDash', image: aidashLogo }],
     summary:
       'Building customer-facing product features and GenAI-driven solutions for an AI-first vertical SaaS company helping power utilities become more resilient with satellite intelligence and AI.',
     description: [
@@ -19,6 +34,7 @@ const experiences = [
     company: 'LinkedIn',
     location: 'Sunnyvale, CA',
     period: 'Oct 2024 - Dec 2025',
+    logos: [{ name: 'LinkedIn', image: linkedinLogo }],
     summary:
       'Owned full-stack features for LinkedIn internal employee productivity systems serving 28K+ employees, partnering with Product, UX, and ITSM to ship measurable platform improvements.',
     description: [
@@ -34,6 +50,7 @@ const experiences = [
     company: 'RFXCEL',
     location: 'San Ramon, CA',
     period: 'May 2023 - Dec 2024',
+    logos: [{ name: 'RFXCEL', image: rfxcelLogo }],
     summary:
       'Partnered with sales engineering and product teams to ship AI, analytics, and platform features for healthcare and pharma clients including Cardinal, AbbVie, and Walgreens.',
     description: [
@@ -49,6 +66,13 @@ const experiences = [
     company: 'Early Career: VVF, IPCL, Bajaj Energy, Abhijeet Projects, Airox Nigen',
     location: 'Chennai, Mumbai, Kolkata, Noida, Ranchi, India',
     period: 'Apr 2009 - Aug 2022',
+    logos: [
+      { name: 'VVF', image: vvfLogo },
+      { name: 'IPCL', image: ipclLogo },
+      { name: 'Bajaj Energy', image: bajajEnergyLogo },
+      { name: 'Abhijeet Projects', image: abhijeetProjectsLogo },
+      { name: 'Airox Nigen', image: airoxNigenLogo },
+    ],
     summary:
       'Led supply-chain, manufacturing, project, and finance analytics initiatives across energy, chemical, and industrial operations before transitioning into AI software engineering.',
     description: [
@@ -99,6 +123,24 @@ const recognition = [
   'Career arc combining 4+ years of production AI/software engineering with 12+ years of analytics, operations, and supply-chain domain leadership.',
 ];
 
+function CompanyLogoTile({ logo, compact = false }: { logo: CompanyLogo; compact?: boolean }) {
+  return (
+    <div
+      className={`flex shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-sm ${
+        compact ? 'h-12 min-w-[88px] px-3' : 'h-16 w-24 px-3'
+      }`}
+      title={logo.name}
+    >
+      <img
+        src={logo.image}
+        alt={`${logo.name} logo`}
+        className={`object-contain ${compact ? 'max-h-8 max-w-[76px]' : 'max-h-10 max-w-[78px]'}`}
+        loading="lazy"
+      />
+    </div>
+  );
+}
+
 export function Experience() {
   return (
     <section id="experience" className="py-16 bg-white">
@@ -119,13 +161,23 @@ export function Experience() {
             {experiences.map((exp) => (
               <article key={`${exp.company}-${exp.period}`} className="border-l-4 border-emerald-600 pl-5">
                 <div className="flex flex-col md:flex-row md:justify-between md:gap-6">
-                  <div>
-                    <h3 className="font-semibold text-xl text-gray-950">{exp.title}</h3>
-                    <p className="text-gray-700 font-medium">{exp.company}</p>
-                    <p className="text-sm text-gray-500">{exp.location}</p>
+                  <div className="flex items-start gap-4">
+                    {exp.logos.length === 1 && <CompanyLogoTile logo={exp.logos[0]} />}
+                    <div>
+                      <h3 className="font-semibold text-xl text-gray-950">{exp.title}</h3>
+                      <p className="text-gray-700 font-medium">{exp.company}</p>
+                      <p className="text-sm text-gray-500">{exp.location}</p>
+                    </div>
                   </div>
                   <span className="text-sm font-semibold text-gray-600 mt-2 md:mt-1 md:text-right">{exp.period}</span>
                 </div>
+                {exp.logos.length > 1 && (
+                  <div className="mt-4 flex flex-wrap gap-3" aria-label="Company logos">
+                    {exp.logos.map((logo) => (
+                      <CompanyLogoTile key={logo.name} logo={logo} compact />
+                    ))}
+                  </div>
+                )}
                 <p className="mt-3 text-gray-600 leading-7">{exp.summary}</p>
                 <ul className="mt-3 space-y-2 list-disc pl-5 text-gray-600 text-sm leading-6">
                   {exp.description.map((item) => (
