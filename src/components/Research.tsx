@@ -35,14 +35,14 @@ const proofPoints = [
 
 export function Research() {
   return (
-    <section id="research" className="py-16 bg-slate-950 text-white">
+    <section id="research" className="py-16 bg-gradient-to-br from-emerald-50 via-white to-sky-50 text-gray-950">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">Patents & Publications</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">Patents & Publications</p>
           <h2 className="text-3xl font-bold mt-2">
             Research-Backed AI Engineering
           </h2>
-          <p className="text-slate-300 mt-4 leading-7">
+          <p className="text-gray-600 mt-4 leading-7">
             Recent work spans verifiable agent execution, retrieval-layer intelligence, and career-aware AI systems
             with provenance and anti-hallucination controls.
           </p>
@@ -53,10 +53,10 @@ export function Research() {
             const Icon = point.icon;
 
             return (
-              <div key={point.label} className="border border-white/10 bg-white/5 rounded-lg p-5">
-                <Icon className="w-6 h-6 text-emerald-300 mb-4" />
+              <div key={point.label} className="border border-emerald-100 bg-white rounded-lg p-5 shadow-sm">
+                <Icon className="w-6 h-6 text-emerald-700 mb-4" />
                 <p className="text-3xl font-bold">{point.value}</p>
-                <p className="text-sm text-slate-300 leading-6">{point.label}</p>
+                <p className="text-sm text-gray-600 leading-6">{point.label}</p>
               </div>
             );
           })}
@@ -65,12 +65,12 @@ export function Research() {
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <ScrollText className="w-6 h-6 text-emerald-300" />
+              <ScrollText className="w-6 h-6 text-emerald-700" />
               <h3 className="text-2xl font-semibold">Patent Filings</h3>
             </div>
             <div className="space-y-5">
               {patents.map((patent) => (
-                <article key={patent.title} className="border border-white/10 bg-white rounded-lg p-6 text-gray-900">
+                <article key={patent.title} className="border border-gray-200 bg-white rounded-lg p-6 text-gray-900 shadow-md">
                   <p className="text-sm font-semibold text-emerald-700">{patent.filing}</p>
                   <h4 className="text-xl font-semibold mt-2">{patent.title}</h4>
                   <p className="text-gray-600 leading-7 mt-3">{patent.description}</p>
@@ -81,12 +81,12 @@ export function Research() {
 
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <BookOpen className="w-6 h-6 text-emerald-300" />
+              <BookOpen className="w-6 h-6 text-emerald-700" />
               <h3 className="text-2xl font-semibold">Publication</h3>
             </div>
             {publications.map((publication) => (
-              <article key={publication.title} className="border border-emerald-300/20 bg-emerald-50 rounded-lg p-6 text-gray-900">
-                <p className="text-sm font-semibold text-emerald-700">{publication.venue}</p>
+              <article key={publication.title} className="border border-sky-100 bg-white rounded-lg p-6 text-gray-900 shadow-md">
+                <p className="text-sm font-semibold text-sky-700">{publication.venue}</p>
                 <h4 className="text-xl font-semibold mt-2">{publication.title}</h4>
                 <p className="text-gray-600 leading-7 mt-3">{publication.description}</p>
               </article>

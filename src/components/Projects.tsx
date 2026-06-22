@@ -94,7 +94,7 @@ const projects: Project[] = [
     description: 'Supporting Gaia AI with deployment and YOLO model fine-tuning for Kenya wildlife detection. The dashboard turns camera-trap uploads into conservation intelligence for Tsavo field teams, including detected animals, species counts, activity patterns, model comparison, reports, and alerting workflows for practical field review.',
     image: gaiaTsavoImg,
     technologies: ['YOLO Fine-Tuning', 'Computer Vision', 'Model Deployment', 'Wildlife Detection', 'Dashboarding', 'AWS EC2'],
-    status: 'in-progress',
+    status: 'completed',
     category: 'ngo-social-impact',
     impactArea: 'NGO Conservation AI',
     partnerType: 'Gaia AI / Kenya Wildlife',
@@ -298,28 +298,27 @@ export function Projects() {
         </div>
 
         <div className="mb-12">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+          <div className="mb-6">
             <div>
               <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">Global Impact Spotlight</p>
               <h3 className="text-2xl font-bold text-gray-950 mt-1">Healthcare, NGO, and Conservation AI</h3>
             </div>
-            <p className="text-gray-600 max-w-2xl leading-7">
-              These projects strengthen the international profile for roles in New Zealand, Canada, Australia, and
-              Europe by showing AI work with real-world users, safety constraints, field deployment, and social impact.
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-6">
             {spotlightProjects.map((project) => (
               <article key={project.title} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                <div className="grid md:grid-cols-[220px_minmax(0,1fr)] h-full">
+                <div className="h-full flex flex-col">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-56 md:h-full object-cover"
+                    className="w-full aspect-video object-cover bg-gray-950"
                   />
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-1">
                     <div className="flex flex-wrap gap-2 mb-3">
+                      <span className={`px-3 py-1 rounded-full text-xs font-semibold ${statusColors[project.status]}`}>
+                        {project.status === 'poc' ? 'POC Stage' : project.status.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                      </span>
                       {project.impactArea && (
                         <span className="px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-xs font-semibold text-emerald-800">
                           {project.impactArea}
@@ -347,7 +346,7 @@ export function Projects() {
                         </span>
                       ))}
                     </div>
-                    <div className="flex gap-4 mt-5">
+                    <div className="flex gap-4 mt-5 pt-1">
                       {project.github && (
                         <a
                           href={project.github}
