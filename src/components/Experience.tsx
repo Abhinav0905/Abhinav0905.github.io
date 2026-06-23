@@ -1,3 +1,4 @@
+import Award from 'lucide-react/dist/esm/icons/award.js';
 import aidashLogo from '../assets/images/company-logos/aidash.png';
 import linkedinLogo from '../assets/images/company-logos/linkedin.svg';
 import rfxcelLogo from '../assets/images/company-logos/rfxcel.png';
@@ -226,11 +227,18 @@ export function Experience() {
               </div>
             </div>
 
-            <div>
-              <h3 className="text-xl font-semibold mb-5 text-gray-950">Recognition</h3>
-              <ul className="space-y-3 text-sm text-gray-600 leading-6">
+            <div className="rounded-lg border border-amber-200 bg-gradient-to-br from-amber-50 via-white to-emerald-50 p-5 shadow-md">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-amber-100 text-amber-700">
+                  <Award className="h-5 w-5" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-950">Recognition</h3>
+              </div>
+              <ul className="space-y-3 text-sm text-gray-700 leading-6">
                 {recognition.map((item) => (
-                  <li key={item} className="border-l-2 border-amber-400 pl-3">{item}</li>
+                  <li key={item} className="border-l-4 border-amber-500 bg-white/75 py-3 pl-4 pr-3 shadow-sm">
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
