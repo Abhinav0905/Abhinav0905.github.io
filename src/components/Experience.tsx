@@ -120,8 +120,17 @@ const skills = [
 ];
 
 const recognition = [
-  'Fully funded Ph.D. admission offer in Computer Science from University at Buffalo (SUNY), selected to work under Dr. Venu Govindaraju.',
-  'Career arc combining 4+ years of production AI/software engineering with 12+ years of analytics, operations, and supply-chain domain leadership.',
+  {
+    textBefore:
+      'Fully funded Ph.D. admission offer in Computer Science from University at Buffalo (SUNY), selected to work under ',
+    linkText: 'Dr. Venu Govindaraju',
+    linkHref: 'https://www.linkedin.com/in/venu-govindaraju/',
+    textAfter: '.',
+  },
+  {
+    textBefore:
+      'Career arc combining 4+ years of production AI/software engineering with 12+ years of analytics, operations, and supply-chain domain leadership.',
+  },
 ];
 
 function CompanyLogoTile({ logo, compact = false }: { logo: CompanyLogo; compact?: boolean }) {
@@ -236,8 +245,19 @@ export function Experience() {
               </div>
               <ul className="space-y-3 text-sm text-gray-700 leading-6">
                 {recognition.map((item) => (
-                  <li key={item} className="border-l-4 border-amber-500 bg-white/75 py-3 pl-4 pr-3 shadow-sm">
-                    {item}
+                  <li key={item.textBefore} className="border-l-4 border-amber-500 bg-white/75 py-3 pl-4 pr-3 shadow-sm">
+                    {item.textBefore}
+                    {item.linkHref && item.linkText && (
+                      <a
+                        href={item.linkHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-emerald-800 underline decoration-emerald-300 underline-offset-4 hover:text-emerald-950"
+                      >
+                        {item.linkText}
+                      </a>
+                    )}
+                    {item.textAfter}
                   </li>
                 ))}
               </ul>
