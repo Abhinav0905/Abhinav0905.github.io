@@ -45,7 +45,7 @@ const publications = [
   },
   {
     title: "Does Google's Open Knowledge Format Improve RAG? A Controlled Evaluation",
-    status: 'SSRN 7227678; 360 views and 230 downloads as of October 2026',
+    status: 'SSRN 7227678; 360 views and 203 downloads as of October 2026',
     href: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7227678',
   },
 ];

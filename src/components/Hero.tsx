@@ -9,8 +9,8 @@ import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check.js';
 import Sparkles from 'lucide-react/dist/esm/icons/sparkles.js';
 
 const impactMetrics = [
-  { value: '4+', label: 'years in AI and full-stack engineering' },
-  { value: '13+', label: 'years in industry, analytics and project delivery' },
+  { value: '3+', label: 'years in AI and full-stack engineering' },
+  { value: '13+', label: 'years in industrial projects and project management' },
   { value: '28K+', label: 'employees supported by enterprise AI systems' },
   { value: '10K+', label: 'utility circuits covered by AI workflows' },
 ];
@@ -57,11 +57,10 @@ export function Hero() {
               Building production AI products that turn complex workflows into measurable business outcomes.
             </h2>
             <p className="text-gray-600 mb-8 max-w-3xl mx-auto lg:mx-0 text-base md:text-lg leading-8">
-              Software engineer with 4+ years building AI-backed and full-stack products in Python, FastAPI, Java,
-              TypeScript and React, backed by 13+ years in industrial projects, manufacturing and supply chain as a
-              business analyst and project manager. My work includes support systems for 28K+ employees and utility
-              workflows across 10,000+ circuits, with results such as 45% lower MTTR, 85% lower dashboard query latency
-              and 2,000+ engineering hours saved each year.
+              Software engineer with 3+ years building AI-backed and full-stack products in Python, FastAPI, Java,
+              TypeScript and React, backed by 13+ years in industrial projects, manufacturing and supply chain. My work
+              includes support systems for 28K+ employees and utility workflows across 10,000+ circuits, with results
+              such as 45% lower MTTR, 85% lower dashboard query latency and 2,000+ engineering hours saved each year.
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8 max-w-4xl mx-auto lg:mx-0">
               {impactMetrics.map((metric) => (

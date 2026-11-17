@@ -13,6 +13,29 @@ interface CompanyLogo {
   image: string;
 }
 
+const careerStages = [
+  {
+    period: '2009 - 2022',
+    title: 'Industrial Projects',
+    details: ['Project management', 'Manufacturing & power'],
+  },
+  {
+    period: '2022 - 2024',
+    title: 'Graduate Studies',
+    details: ['M.S. Business Analytics', 'CSU East Bay'],
+  },
+  {
+    period: 'May 2023 - Dec 2023',
+    title: 'Entry into Software',
+    details: ['Software Engineer Intern', 'RFXCEL'],
+  },
+  {
+    period: '2024 - Present',
+    title: 'Software & AI',
+    details: ['Software engineering', 'RFXCEL · LinkedIn · AiDash'],
+  },
+];
+
 const experiences = [
   {
     title: 'Software Engineer II (Full Stack)',
@@ -63,8 +86,8 @@ const experiences = [
     ],
   },
   {
-    title: 'Business Analyst & Project Manager',
-    company: 'Early Career: VVF, India Power, Bajaj Energy, Abhijeet Projects and Airox Nigen',
+    title: 'Manager - Projects',
+    company: 'VVF, India Power, Bajaj Energy, Abhijeet Projects and Airox Nigen',
     location: 'India',
     period: 'Apr 2009 - Aug 2022',
     logos: [
@@ -77,11 +100,11 @@ const experiences = [
     summary:
       'Airox Nigen (2009-2010), Abhijeet Projects (2010-2013), Bajaj Energy (2013-2016), India Power (2016-2017) and VVF (2017-2022).',
     description: [
-      'Built a Python and SQL inventory segmentation model tied to SAP, reducing global inventory by 25% and freeing $1M in working capital.',
-      'Led requirements work with Operations, Finance, Procurement and Plant leadership, converting business needs into BRD/FRD, user stories and acceptance criteria.',
-      'Used regression, hypothesis testing and Tableau to find production losses, cutting losses by 22% and reducing manufacturing cost from $200/MT to $150/MT.',
       'Managed capital projects across oleochemicals, consumer products and power operations. At VVF, led a $600K expansion that doubled tertiary-amine capacity from 2,000 to 4,000 tonnes per year.',
+      'Led approximately six to seven employees and coordinated four to five contractor teams, with roughly 200 site workers involved through indirect supervision. Figures are approximate.',
       'Built an Excel project-costing tool and tracked budgets, work-breakdown structures, milestones and execution plans in SAP and MS Project.',
+      'Prepared bills of quantities and purchase requisitions, compared supplier equipment specifications and followed material deliveries against installation schedules. Led cross-functional reviews with operations and site teams.',
+      'Managed or supported construction and commissioning involving hydrogen-generation plants, piping systems, water-treatment equipment, cooling towers and pumps across industrial and power-sector projects.',
     ],
   },
 ];
@@ -130,7 +153,7 @@ const recognition = [
   },
   {
     textBefore:
-      'Career arc combining 4+ years of AI and full-stack engineering with 13+ years in industrial projects, manufacturing, supply chain, business analysis and project management.',
+      'Career transition from 13+ years in industrial projects and project management to 3+ years in AI and full-stack software engineering.',
   },
 ];
 
@@ -165,6 +188,24 @@ export function Experience() {
             A portfolio of shipped GenAI systems, product features, data platforms, and automation programs with
             measurable adoption, cost savings, reliability, and customer value.
           </p>
+        </div>
+
+        <div className="mb-12">
+          <h3 className="text-xl font-semibold text-gray-950 mb-5">Career Transition</h3>
+          <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px overflow-hidden rounded-xl border border-gray-200 bg-gray-200 shadow-sm">
+            {careerStages.map((stage) => (
+              <li
+                key={stage.period}
+                className="bg-gray-50 p-5"
+              >
+                <p className="text-sm font-semibold text-emerald-700">{stage.period}</p>
+                <h4 className="mt-2 font-semibold text-gray-950">{stage.title}</h4>
+                {stage.details.map((detail) => (
+                  <p key={detail} className="mt-1 text-sm text-gray-600">{detail}</p>
+                ))}
+              </li>
+            ))}
+          </ol>
         </div>
 
         <div className="grid lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.65fr)] gap-10">
