@@ -152,14 +152,14 @@ const projects: Project[] = [
   },
   {
     title: 'Automated Release Notes Generator',
-    description: 'Created a tool to automatically generate comprehensive release notes by analyzing remediation plans and Jira comments for each release, presenting them in a customer-friendly format. This solution streamlines the release documentation process and ensures consistency in release communications. Saving the team 50% of the time spent on manual release note writing.',
+    description: 'Built an LLM-based automation that extracts and summarizes sprint changes from Jira and Confluence into customer-friendly release notes. It removed repetitive manual documentation and saved about three person-days per two-week sprint.',
     image: releaseNoteImg,
     technologies: ['Python', 'Jira API', 'NLP'],
     status: 'completed',
     category: 'process-automation',
     highlights: [
       'Standardized release documentation process',
-      'Cut manual release-note writing time by 50%',
+      'Saved about three person-days per two-week sprint',
       'Ensured consistent release communication across teams'
     ],
     github: 'https://github.com/Abhinav0905/AI-Release-Note-Generator'
@@ -213,16 +213,17 @@ const projects: Project[] = [
     ]
   },
   {
-    title: 'Python Book: Beginner to Intermediate',
-    description: 'In Planning stage, A comprehensive Python programming book covering fundamental to intermediate concepts with practical examples and real-world applications.',
+    title: 'Python, Made Friendly',
+    description: 'Published a beginner-friendly Python programming textbook covering core concepts, practical code examples and hands-on exercises, with a public companion code repository.',
     image: pythonBookImg,
     technologies: ['Python', 'Technical Writing', 'Education'],
-    status: 'planning',
+    status: 'completed',
     category: 'other',
     github: '',
     highlights: [
-      'Aims to guide new developers through hands-on examples',
-      'Will include real-world case studies'
+      'Published in 2026',
+      'ISBN 979-8-90673-969-8',
+      'Hands-on exercises and public companion code'
     ]
   },
   {

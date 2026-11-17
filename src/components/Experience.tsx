@@ -15,23 +15,23 @@ interface CompanyLogo {
 
 const experiences = [
   {
-    title: 'Sr. Software Engineer (Full Stack)',
-    company: 'AiDash',
+    title: 'Software Engineer II (Full Stack)',
+    company: 'AiDash (acquired by Schneider Electric)',
     location: 'Palo Alto, CA',
     period: 'Dec 2025 - Present',
     logos: [{ name: 'AiDash', image: aidashLogo }],
     summary:
-      'Building customer-facing product features and GenAI-driven solutions for an AI-first vertical SaaS company helping power utilities become more resilient with satellite intelligence and AI.',
+      'Building customer-facing AI, data-onboarding and workflow products for utility operations.',
     description: [
-      'Built the first stage of an Agentic Code Generation Platform that ingests Jira tickets, comments, and attachments; generates implementation plans; routes work through reviewer agents; and keeps human approval before downstream engineering workflows. Improved code-generation accuracy to ~80-85%, reduced trivial-ticket deployment time from 7 days to 2 days, and avoided two contractor hires, saving ~$50K annually.',
-      'Shipped NLP Smart Filtering with React, TypeScript, and FastAPI. LLM-based intent parsing plus deterministic hierarchical filters reduced utility operator setup from 2-3 minutes to under 10 seconds and improved wildfire-response workflows by ~60%.',
-      'Built ARIA, an Autonomous Risk Intelligence Assistant for alpha testing, using LangGraph and MCP multi-tool orchestration across telemetry, risk signals, and reporting. Enabled proactive monitoring across 10,000+ circuits and reduced manual oversight by ~80%.',
-      'Automated Jira ticket intelligence with Atlassian Rovo agents and Jira Automation, replacing an external triage tool with strict JSON contracts, normalized priority scoring, field validations, audit tracing, and resilient change triggers.',
-      'Built a tenant-aware CCP notification microservice using FastAPI, PostgreSQL, Django/DRF, and React for in-app and email notifications across job lifecycle, assignment, approval, and onboarding events.',
+      'Led application data onboarding for two major U.S. utilities, including one with strict data-residency requirements. Built Python-based geospatial data-preparation tooling and coordinated data validation, application uploads and go-live readiness.',
+      'Architected Wildfire Copilot (CRIS Ask AI), a customer-facing assistant that lets utility operators compare circuit-level wildfire risks in natural language. Built it with LangGraph, AWS Bedrock, React, FastAPI, tenant-secured REST tools, guardrails and audit logging.',
+      'Built a LangGraph and AWS Bedrock multi-agent system for requirements analysis, planning, frontend and backend development, QA, sandbox testing, Bitbucket branch creation and Jira handoffs. The workflow resolved 100+ customer tickets in 2026.',
+      'Built a tenant-aware notification service with FastAPI, PostgreSQL, Django/DRF and React, with idempotent event processing, service-to-service APIs, in-app and email alerts and task deep links. Delivered in March 2026 as an in-house alternative to Amazon Pinpoint.',
+      'Improved security and evaluation for a production RAG assistant used with 800-page wildfire mitigation plans. Citation scores rose from 2.89 to 4.09/5 and poor-retrieval responses fell from 49% to 21%.',
     ],
   },
   {
-    title: 'Sr. Software Engineer (Contractor)',
+    title: 'Sr. Software Engineer (Contract)',
     company: 'LinkedIn',
     location: 'Sunnyvale, CA',
     period: 'Oct 2024 - Dec 2025',
@@ -39,48 +39,49 @@ const experiences = [
     summary:
       'Owned full-stack features for LinkedIn internal employee productivity systems serving 28K+ employees, partnering with Product, UX, and ITSM to ship measurable platform improvements.',
     description: [
-      'Led an internal GenAI chatbot on the Employee Productivity Platform using Azure OpenAI GPT-4/GPT-4o, RAG on Azure AI Search and Glean, and Python/FastAPI microservices. Drove 65% adoption in 2 months, reduced MTTR by ~45%, saved ~$200K/year in infrastructure, and freed roughly 1 FTE of support capacity.',
-      'Integrated ServiceNow incident deflection, Contract Finder across Salesforce and Dynamics, and Franklin Finance PO lookup so support and finance teams could self-serve contract and payment details while cutting low-value ticket creation by ~30%.',
-      'Migrated LDAP, Slack user refresh, Cosmos priming, and Microsoft Graph working-hours pipelines into Temporal workflows, eliminating ~95% of pipeline failures and saving 416 engineering hours per year.',
-      'Designed an AI-powered test generation platform with Python, LangGraph, and Oracle that converts business documents into executable test scenarios and FK-aware synthetic data, reducing test-data preparation from days to ~90 seconds per run.',
-      'Built a marketing brief and asset automation pipeline with LangGraph and Azure OpenAI to parse briefs, classify assets, read Excel translation sheets, and produce downstream JSON for resize and translation workflows.',
+      'Modernized an internal chatbot serving 28K+ employees by migrating its Java backend to Python/FastAPI and integrating Azure OpenAI, Azure AI Search and Glean. Reduced MTTR by ~45%, reached 65% adoption within two months and saved ~$100K annually in infrastructure costs.',
+      'Extended the assistant with ServiceNow, Salesforce, Dynamics and financial-system integrations. Routine support ticket creation fell by ~30%, with an estimated ~$50K impact reported in an internal hackathon.',
+      'Built an AI agent for Accenture marketing production that processes multi-folder briefs, assets and Excel translation sheets, updates requirements trackers, flags inconsistent inputs and generates JSON and executable Photoshop scripts. Preparation time fell from 4-5 days to 30-45 minutes per flyer.',
+      'Migrated LDAP and Slack employee synchronization, Cosmos DB priming and Microsoft Graph jobs to fault-tolerant Temporal workflows. Pipeline failures fell by ~95%, saving about 416 engineering hours annually.',
+      'Built a Python and LangGraph agent with Oracle Database that turns business requirements into executable test scenarios and foreign-key-safe synthetic datasets in about 90 seconds per run.',
     ],
   },
   {
-    title: 'Software Engineer',
+    title: 'Software Engineer Intern | Software Engineer',
     company: 'RFXCEL',
     location: 'San Ramon, CA',
     period: 'May 2023 - Dec 2024',
     logos: [{ name: 'RFXCEL', image: rfxcelLogo }],
     summary:
-      'Partnered with sales engineering and product teams to ship AI, analytics, and platform features for healthcare and pharma clients including Cardinal, AbbVie, and Walgreens.',
+      'Software Engineer Intern from May to December 2023, then Software Engineer from January to December 2024.',
     description: [
-      'Built GenAI productivity tools including a Text2SQL assistant using OpenAI and AWS Redshift, reducing support-ticket processing time by 45%, avoiding three contractor roles, and saving ~$100K annually.',
-      'Developed an automated release-notes generator using Jira, Confluence, and OpenAI that saved 576 engineering hours annually and improved customer-facing release communication.',
-      'Built a SQL-to-Elasticsearch pipeline and Kibana dashboard for real-time inventory lifecycle analytics, reducing query latency by 50%, improving operational efficiency by 25%, and supporting $1M in additional revenue.',
-      'Delivered Java Spring Boot APIs and Angular interfaces for escalation management and real-time inventory/order synchronization with SAP, reducing resolution time by 40% and saving clients an estimated $1.2M annually.',
-      'Built a LangGraph-based Jira conversational assistant that turns natural-language requests into ticket actions and escalation-risk scoring, cutting triage from 30-40 minutes to under 4 minutes per incident.',
+      "Led an inventory analytics dashboard for Bahrain's healthcare supply chain, building a SQL-to-Elasticsearch pipeline and Kibana visualizations. Query latency fell by ~85%.",
+      'Built Java Spring Boot and Angular features for Walgreens pharmaceutical exception management, including configurable notification recipients and data exports for investigation and regulatory reporting.',
+      "Developed a Java Spring Boot REST API for real-time synchronization between AbbVie's SAP system and the RFXCEL application database.",
+      'Built an LLM-based release-note generator using Jira and Confluence, saving about three person-days per two-week sprint.',
+      'Built an OpenAI and AWS Redshift natural-language SQL assistant that reduced ticket-processing effort by ~45% and reliance on three contractor roles. A Jira triage agent cut triage from 30-40 minutes to 3-4 minutes and helped prevent about 20 escalations per month.',
     ],
   },
   {
-    title: 'Staff - Business Data Analyst',
-    company: 'Early Career: VVF, IPCL, Bajaj Energy, Abhijeet Projects, Airox Nigen',
-    location: 'Chennai, Mumbai, Kolkata, Noida, Ranchi, India',
+    title: 'Business Analyst & Project Manager',
+    company: 'Early Career: VVF, India Power, Bajaj Energy, Abhijeet Projects and Airox Nigen',
+    location: 'India',
     period: 'Apr 2009 - Aug 2022',
     logos: [
       { name: 'VVF', image: vvfLogo },
-      { name: 'IPCL', image: ipclLogo },
+      { name: 'India Power', image: ipclLogo },
       { name: 'Bajaj Energy', image: bajajEnergyLogo },
       { name: 'Abhijeet Projects', image: abhijeetProjectsLogo },
       { name: 'Airox Nigen', image: airoxNigenLogo },
     ],
     summary:
-      'Led supply-chain, manufacturing, project, and finance analytics initiatives across energy, chemical, and industrial operations before transitioning into AI software engineering.',
+      'Airox Nigen (2009-2010), Abhijeet Projects (2010-2013), Bajaj Energy (2013-2016), India Power (2016-2017) and VVF (2017-2022).',
     description: [
-      'Led requirements and stakeholder management across Operations, Finance, Procurement, and Plant leadership, translating business pain points into BRD/FRD, user stories, dashboards, and process improvements.',
-      'Created SAP data dictionaries and master-data mapping linking equipment, spare parts, and consumption history across plants to standardize classification and improve reporting reliability.',
-      'Designed a global inventory optimization engine using Python, SQL, JIT, and VMI segmentation, reducing global inventory by 25% and freeing $1M in working capital.',
-      'Built manufacturing analytics and loss-reduction models using regression, hypothesis testing, variance analysis, and Tableau executive dashboards, eliminating 22% of manufacturing losses and reducing cost from $200/MT to $150/MT.',
+      'Built a Python and SQL inventory segmentation model tied to SAP, reducing global inventory by 25% and freeing $1M in working capital.',
+      'Led requirements work with Operations, Finance, Procurement and Plant leadership, converting business needs into BRD/FRD, user stories and acceptance criteria.',
+      'Used regression, hypothesis testing and Tableau to find production losses, cutting losses by 22% and reducing manufacturing cost from $200/MT to $150/MT.',
+      'Managed capital projects across oleochemicals, consumer products and power operations. At VVF, led a $600K expansion that doubled tertiary-amine capacity from 2,000 to 4,000 tonnes per year.',
+      'Built an Excel project-costing tool and tracked budgets, work-breakdown structures, milestones and execution plans in SAP and MS Project.',
     ],
   },
 ];
@@ -90,13 +91,13 @@ const education = [
     degree: 'M.S. in Business Analytics',
     school: 'California State University East Bay',
     location: 'Hayward, CA',
-    period: 'Aug 2022 - Dec 2023',
+    period: '2022 - 2024',
   },
   {
     degree: 'B.Tech. in Chemical Engineering; Computer Science & Engineering Elective',
     school: 'Sathyabama Deemed University',
     location: 'Chennai, India',
-    period: 'Aug 2005 - Dec 2009',
+    period: '2005 - 2009',
   },
 ];
 
@@ -129,7 +130,7 @@ const recognition = [
   },
   {
     textBefore:
-      'Career arc combining 4+ years of production AI/software engineering with 12+ years of analytics, operations, and supply-chain domain leadership.',
+      'Career arc combining 4+ years of AI and full-stack engineering with 13+ years in industrial projects, manufacturing, supply chain, business analysis and project management.',
   },
 ];
 

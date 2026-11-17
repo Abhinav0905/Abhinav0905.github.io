@@ -5,7 +5,8 @@ import X from 'lucide-react/dist/esm/icons/x.js';
 const navItems = [
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
-  { href: '#research', label: 'Patents & Publications' },
+  { href: '#open-source', label: 'Open Source' },
+  { href: '#research', label: 'Research & Recognition' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
 ];
